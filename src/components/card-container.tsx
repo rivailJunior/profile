@@ -77,7 +77,7 @@ export default function CardContainer() {
               <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4 lg:w-9/12">
                   <p className="mb-4 text-lg leading-relaxed text-gray-800">
-                    Software Developer with almost 10 years of experience. Along
+                    {` Software Developer with almost 10 years of experience. Along
                     this journey, I've being improving the way I implement,
                     build and deploy scalable software, and continuing connected
                     with the customer to give them a great experience. In the
@@ -88,6 +88,7 @@ export default function CardContainer() {
                     Gateway, Cash-Back App and actually I'm working with
                     payments again, with a method called BNPL (Buy Now Pay
                     Later).
+                    `}
                   </p>
                 </div>
               </div>

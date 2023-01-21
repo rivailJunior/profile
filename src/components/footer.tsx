@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="container mx-auto flex flex-row justify-center">
           <div className="flex ">
             <div className="w-full">
-              <h4 className="text-2xl font-semibold">Let's keep in touch!</h4>
+              <h4 className="text-2xl font-semibold">{`Let's keep in touch!`}</h4>
               <h5 className="mt-0 mb-2 text-lg text-gray-700">
                 Find me on any social profiles
               </h5>
