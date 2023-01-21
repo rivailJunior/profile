@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Image from "next/image";
 import React from "react";
-import { PordosolAlterImg } from "../assets/images";
+import { SunsetImg } from "../assets/images";
 
 export default function HeaderImage() {
   return (
@@ -11,7 +12,7 @@ export default function HeaderImage() {
           fill
           alt="ponta negra"
           className="flex h-full w-auto justify-center"
-          src={PordosolAlterImg}
+          src={SunsetImg}
         />
         <span
           id="blackOverlay"
