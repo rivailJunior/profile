@@ -1,80 +1,60 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Image from "next/image";
 import React from "react";
 import { PersonalImg } from "../assets/images";
-import { MdLanguage } from "react-icons/md";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import enTrans from "../assets/locales/en/translation.json";
-import ptTrans from "../assets/locales/pt/translation.json";
+import useTranslate from "../hooks/useTranslate";
 
 export default function CardContainer() {
-  const { asPath, locale } = useRouter();
-  const t = locale === "pt" ? ptTrans : enTrans;
+  const { t } = useTranslate();
 
   return (
     <section className="relative bg-gray-300 py-16">
       <div className="container mx-auto px-4">
         <div className="relative mb-6 -mt-64 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
-          <div className="px-6">
-            <div className="flex flex-wrap justify-center">
-              <div className="flex w-full justify-center px-4 lg:order-2 lg:w-3/12">
-                <div className="relative">
-                  <Image
-                    alt="personal picture"
-                    src={PersonalImg}
-                    className="absolute -m-16 -ml-20 h-auto rounded-full border-none align-middle shadow-xl lg:-ml-16"
-                    style={{ maxWidth: "150px", maxHeight: "200px" }}
-                  />
-                </div>
+          <div className="container">
+            <div className="flex h-10 w-full justify-center">
+              <div className="relative">
+                <Image
+                  alt="personal picture"
+                  src={PersonalImg}
+                  className="absolute -m-16 rounded-full border-none align-middle shadow-xl"
+                  style={{
+                    maxWidth: "150px",
+                    maxHeight: "150px",
+                    objectFit: "cover",
+                  }}
+                />
               </div>
-              <div className="w-full px-4 lg:order-3 lg:w-4/12 lg:self-center lg:text-right">
-                <div className="mt-32 py-6 px-3 sm:mt-0">
-                  <Link
-                    href={asPath}
-                    locale="en"
-                    type="button"
-                    className="mr-2 inline-flex items-center rounded-lg bg-blue-700 p-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
-                  >
-                    <MdLanguage />
-                  </Link>
-                  <Link
-                    href={asPath}
-                    locale="pt"
-                    type="button"
-                    className="mr-2 inline-flex items-center rounded-lg bg-green-700 p-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
-                  >
-                    <MdLanguage />
-                  </Link>
+            </div>
+            <div className="relative pt-20">
+              <div className="flex justify-center  lg:pt-4">
+                <div className="mr-4 text-center">
+                  <span className="text-sm text-gray-500">
+                    {t.card_fav_stack}
+                  </span>
+                  <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
+                    Javascript
+                  </span>
                 </div>
-              </div>
-              <div className="w-full px-4 lg:order-1 lg:w-4/12">
-                <div className="flex justify-center py-4 pt-8 lg:pt-4">
-                  <div className="mr-4 p-3 text-center">
-                    <span className="block text-xl font-bold uppercase tracking-wide text-gray-700">
-                      34
-                    </span>
-                    <span className="text-sm text-gray-500">{t.card_age}</span>
-                  </div>
-                  <div className="mr-4 p-3 text-center">
-                    <span className="block text-xl font-bold uppercase tracking-wide text-gray-700">
-                      10
-                    </span>
-                    <span className="text-sm text-gray-500">
-                      {t.card_experience}
-                    </span>
-                  </div>
-                  <div className="mr-4 p-3 text-center">
-                    <span className="block text-xl font-bold uppercase tracking-wide text-gray-700">
-                      Addi
-                    </span>
-                    <span className="text-sm text-gray-500">
-                      {t.card_current_job}
-                    </span>
-                  </div>
+                <div className="mr-4 text-center">
+                  <span className="text-sm text-gray-500">
+                    {t.card_experience}
+                  </span>
+                  <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
+                    10
+                  </span>
+                </div>
+                <div className="mr-4 text-center">
+                  <span className="text-sm text-gray-500">
+                    {t.card_current_job}
+                  </span>
+                  <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
+                    Addi
+                  </span>
                 </div>
               </div>
             </div>
-            <div className="mt-12 text-center">
+            <div className="mt-5 text-center">
               <h3 className="mb-2 mb-2 text-4xl font-semibold leading-normal text-gray-800">
                 Rivail Santos
               </h3>

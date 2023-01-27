@@ -1,5 +1,10 @@
 import React from "react";
-import { Footer, CardContainer, HeaderImage } from "../components";
+import {
+  Footer,
+  CardContainer,
+  HeaderImage,
+  FixedTranslateButton,
+} from "../components";
 
 export default function Profile() {
   return (
@@ -7,6 +12,7 @@ export default function Profile() {
       <main className="profile-page">
         <HeaderImage />
         <CardContainer />
+        <FixedTranslateButton />
       </main>
       <Footer />
     </>
