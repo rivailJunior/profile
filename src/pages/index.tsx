@@ -9,7 +9,7 @@ import {
 export default function Profile() {
   return (
     <>
-      <main className="profile-page">
+      <main className="profile-page ">
         <HeaderImage />
         <CardContainer />
         <FixedTranslateButton />

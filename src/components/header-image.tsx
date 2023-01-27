@@ -33,7 +33,7 @@ export default function HeaderImage() {
           y="0"
         >
           <polygon
-            className="fill-current text-gray-300"
+            className="fill-current text-gray-100"
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
