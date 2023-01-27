@@ -11,8 +11,18 @@ const config = {
   /* If trying out the experimental appDir, comment the i18n config out
    * @see https://github.com/vercel/next.js/issues/41980 */
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: ["en", "pt"],
+    defaultLocale: "pt",
+    domains: [
+      {
+        domain: "/en",
+        defaultLocale: "en",
+      },
+      {
+        domain: "/pt",
+        defaultLocale: "pt",
+      },
+    ],
   },
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
