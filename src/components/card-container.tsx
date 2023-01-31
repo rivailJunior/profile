@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Image from "next/image";
 import React from "react";
+import { BiMap, BiBriefcase } from "react-icons/bi";
+import { MdOutlineSchool } from "react-icons/md";
 import { PersonalImg } from "../assets/images";
 import useTranslate from "../hooks/useTranslate";
 
@@ -58,23 +60,35 @@ export default function CardContainer() {
               <h3 className="mb-2 mb-2 text-4xl font-semibold leading-normal text-gray-800">
                 Rivail Santos
               </h3>
-              <div className="mt-0 mb-2 text-sm font-bold uppercase leading-normal text-gray-500">
-                <i className="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>{" "}
-                Manaus, Amazonas - Brasil
+              <div className="mt-0 mb-2 text-sm font-bold capitalize leading-normal text-gray-500">
+                <div className="mb-2 flex flex-row justify-center">
+                  <BiMap size={20} />
+                  <span className="ml-2">Manaus, AM - Brasil</span>
+                </div>
               </div>
-              <div className="mb-2 mt-10 text-gray-700">
-                <i className="fas fa-briefcase mr-2 text-lg text-gray-500"></i>
-                {t.card_job_title}
+              <div className="mb-2 mt-5 text-sm font-bold capitalize leading-normal text-gray-500">
+                <div className="mb-2 flex flex-row justify-center">
+                  <BiBriefcase
+                    size={20}
+                    className="fas fa-briefcase mr-2 text-lg text-gray-500"
+                  />
+                  <span className="ml-2">{t.card_job_title}</span>
+                </div>
               </div>
-              <div className="mb-2 text-gray-700">
-                <i className="fas fa-university mr-2 text-lg text-gray-500"></i>
-                {t.card_degree_title}
+              <div className="mb-2 mt-5 text-sm font-bold capitalize leading-normal text-gray-500">
+                <div className="mb-2 flex flex-row justify-center">
+                  <MdOutlineSchool
+                    size={20}
+                    className="fas fa-university mr-2 text-lg text-gray-500"
+                  />
+                  <span className="ml-2">{t.card_degree_title}</span>
+                </div>
               </div>
             </div>
             <div className="mt-10 border-t border-gray-300 py-10 text-center">
               <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4 lg:w-9/12">
-                  <p className="mb-4 text-lg leading-relaxed text-gray-800">
+                  <p className="mb-2 text-justify text-lg leading-relaxed text-gray-600">
                     {t.card_about_me}
                   </p>
                 </div>
