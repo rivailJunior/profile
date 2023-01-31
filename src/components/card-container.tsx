@@ -10,7 +10,7 @@ export default function CardContainer() {
   const { t } = useTranslate();
 
   return (
-    <section className="relative bg-gray-100 py-16">
+    <section className="relative bg-gradient-to-r from-pink-500 to-rose-500 py-16">
       <div className="container mx-auto px-4">
         <div className="relative mb-6 -mt-64 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
           <div className="container">
@@ -57,7 +57,7 @@ export default function CardContainer() {
               </div>
             </div>
             <div className="mt-5 text-center">
-              <h3 className="mb-2 mb-2 text-4xl font-semibold leading-normal text-gray-800">
+              <h3 className="mb-2 mb-2 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
                 Rivail Santos
               </h3>
               <div className="mt-0 mb-2 text-sm font-bold capitalize leading-normal text-gray-500">

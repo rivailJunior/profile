@@ -4,9 +4,10 @@ import React from "react";
 import { MdLanguage } from "react-icons/md";
 import useTranslate from "../hooks/useTranslate";
 const gradientBR =
-  " bg-gradient-to-r from-green-400 to-yellow-400 text-gray-800";
+  " bg-gradient-to-r from-emerald-500 to-emerald-600 text-gray-100";
 
-const gradientEN = " bg-gradient-to-r from-blue-500 to-red-500 text-white";
+const gradientEN =
+  " bg-gradient-to-r from-slate-50 to-slate-100 text-gray-800 ";
 
 export default function FixedTranslateButton() {
   const { asPath } = useRouter();
@@ -17,7 +18,7 @@ export default function FixedTranslateButton() {
         href={asPath}
         locale={isBR ? "en" : "pt"}
         type="button"
-        className={`inline-flex items-center rounded-full p-4 text-center shadow-xl hover:cursor-pointer ${
+        className={`inline-flex items-center rounded-full p-4 text-center shadow-2xl shadow-gray-600 hover:cursor-pointer ${
           isBR ? gradientEN : gradientBR
         }`}
       >

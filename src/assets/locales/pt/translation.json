@@ -4,5 +4,9 @@
   "card_current_job": "Atual",
   "card_job_title": "Eng. Front-End Sr",
   "card_degree_title": "Ciência da Computação - Uninorte Laureate",
-  "card_about_me": "Com mais de 10 anos de experiência, a maioria trabalhando com JavaScript, React e React-Native. Minha experiência me permitiu desenvolver uma ampla gama de aplicativos, desde simples aplicativos até sistemas complexos tais como e-Commerce. Tenho experiência com diferentes bibliotecas de Mapas, gateways de pagamento, e-Commerce, ERP e sistemas de CashBack. Estou bem familiarizado com outras tecnologias relacionadas ao mundo web como PHP e Nodejs. Atualmente, estou trabalhando com plataformas de pagamento e comércio eletrônico. Tenho plena confiança na capacidade de entregar plataformas robustas e de alta qualidade usando JavaScript, Node, React e React-Native."
+  "card_about_me": "Com mais de 10 anos de experiência, a maioria trabalhando com JavaScript, React e React-Native. Minha experiência me permitiu desenvolver uma ampla gama de aplicativos, desde simples aplicativos até sistemas complexos tais como e-Commerce. Tenho experiência com diferentes bibliotecas de Mapas, gateways de pagamento, e-Commerce, ERP e sistemas de CashBack. Estou bem familiarizado com outras tecnologias relacionadas ao mundo web como PHP e Nodejs. Atualmente, estou trabalhando com plataformas de pagamento e comércio eletrônico. Tenho plena confiança na capacidade de entregar plataformas robustas e de alta qualidade usando JavaScript, Node, React e React-Native.",
+  "footer": {
+    "keep_in_touch": "Vamos manter contato",
+    "social_midia_call_to_action": "Minhas redes sociais"
+  }
 }
