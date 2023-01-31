@@ -10,7 +10,7 @@ export default function CardContainer() {
   const { t } = useTranslate();
 
   return (
-    <section className="relative bg-gradient-to-r from-pink-500 to-rose-500 py-16">
+    <section className="relative py-16">
       <div className="container mx-auto px-4">
         <div className="relative mb-6 -mt-64 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
           <div className="container">

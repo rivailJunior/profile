@@ -7,7 +7,7 @@ const gradientBR =
   " bg-gradient-to-r from-emerald-500 to-emerald-600 text-gray-100";
 
 const gradientEN =
-  " bg-gradient-to-r from-slate-50 to-slate-100 text-gray-800 ";
+  " bg-gradient-to-r from-blue-800 to-indigo-900 text-gray-100 ";
 
 export default function FixedTranslateButton() {
   const { asPath } = useRouter();
