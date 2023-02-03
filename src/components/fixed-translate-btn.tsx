@@ -13,17 +13,16 @@ export default function FixedTranslateButton() {
   const { asPath } = useRouter();
   const { isBR } = useTranslate();
   return (
-    <div className="fixed bottom-5 right-5 z-10 mt-32 py-6 px-3 sm:mt-0">
+    <div className="fixed top-4 right-5 z-10 ">
       <Link
         href={asPath}
         locale={isBR ? "en" : "pt"}
         type="button"
-        className={`inline-flex items-center rounded-full p-4 text-center shadow-2xl shadow-gray-600 hover:cursor-pointer ${
+        className={`flex items-center justify-center rounded-full p-2 align-middle text-sm font-light shadow-gray-600 hover:cursor-pointer ${
           isBR ? gradientEN : gradientBR
         }`}
       >
         <MdLanguage size={22} />
-        &nbsp;
         {isBR ? "En" : "Pt"}
       </Link>
     </div>
