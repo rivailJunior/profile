@@ -8,11 +8,12 @@ export default function HeaderImage() {
     <section className="relative block" style={{ height: "500px" }}>
       <div className="flex h-full w-4/5 overflow-hidden bg-white">
         <Image
-          objectFit="cover"
+          priority
           fill
           alt="ponta negra"
-          className="flex h-full w-auto justify-center"
+          className="static flex h-full w-auto justify-center"
           src={SunsetImg}
+          style={{ objectFit: "cover" }}
         />
         <span
           id="blackOverlay"

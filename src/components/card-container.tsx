@@ -19,12 +19,9 @@ export default function CardContainer() {
                 <Image
                   alt="personal picture"
                   src={PersonalImg}
-                  className="absolute -m-16 rounded-full border-none align-middle shadow-xl"
-                  style={{
-                    maxWidth: "150px",
-                    maxHeight: "150px",
-                    objectFit: "cover",
-                  }}
+                  className="z-10 -mt-16 rounded-full border-none align-middle shadow-xl"
+                  width={150}
+                  height={150}
                 />
               </div>
             </div>
