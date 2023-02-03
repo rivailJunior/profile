@@ -10,9 +10,9 @@ export default function CardContainer() {
   const { t } = useTranslate();
 
   return (
-    <section className="relative py-16">
+    <section className="relative pt-36">
       <div className="container mx-auto px-4">
-        <div className="relative mb-6 -mt-64 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
+        <div className="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
           <div className="container">
             <div className="flex h-10 w-full justify-center">
               <div className="relative">
@@ -21,11 +21,11 @@ export default function CardContainer() {
                   src={PersonalImg}
                   className="z-10 -mt-16 rounded-full border-none align-middle shadow-xl"
                   width={150}
-                  height={150}
+                  height={100}
                 />
               </div>
             </div>
-            <div className="relative pt-20">
+            <div className="container relative pt-20">
               <div className="flex justify-center  lg:pt-4">
                 <div className="mr-4 text-center">
                   <span className="text-sm text-gray-500">

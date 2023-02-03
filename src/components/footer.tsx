@@ -7,9 +7,9 @@ export default function Footer() {
   return (
     <footer className="relative pt-8 pb-6">
       <div className="container mx-auto flex flex-col items-center justify-center text-white">
-        <div className="text-lg font-bold uppercase leading-normal">
+        {/* <div className="text-lg font-bold uppercase leading-normal">
           {t.footer.social_midia_call_to_action}
-        </div>
+        </div> */}
         <div className="mt-2 flex flex-row items-center justify-between  align-middle">
           <button
             className="m-1 h-10 w-10 rounded-full bg-blue-400 p-3 font-normal text-white shadow-lg outline-none focus:outline-none"
