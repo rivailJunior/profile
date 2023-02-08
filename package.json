@@ -7,7 +7,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "commit": "npx git-cz"
+    "commit": "npx cz"
   },
   "husky": {
     "hooks": {
