@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Image from "next/image";
-import React from "react";
 import { BiMap, BiBriefcase } from "react-icons/bi";
 import { MdOutlineSchool } from "react-icons/md";
 import { PersonalImg } from "../assets/images";
 import useTranslate from "../hooks/useTranslate";
+import FadeInComponent from "./fadeInComponent";
+import { Transition } from "@headlessui/react";
 
 export default function CardContainer() {
   const { t } = useTranslate();
@@ -31,6 +32,7 @@ export default function CardContainer() {
                   <span className="text-sm text-gray-500">
                     {t.card_fav_stack}
                   </span>
+
                   <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
                     Javascript
                   </span>
@@ -54,9 +56,14 @@ export default function CardContainer() {
               </div>
             </div>
             <div className="mt-5 text-center">
-              <h3 className="mb-2 mb-2 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
-                Rivail Santos
-              </h3>
+              <Transition show={true} appear>
+                <FadeInComponent delay="delay-[300ms]">
+                  <h3 className="mb-2 mb-2 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
+                    Rivail Santos
+                  </h3>
+                </FadeInComponent>
+              </Transition>
+
               <div className="mt-0 mb-2 text-sm font-bold capitalize leading-normal text-gray-500">
                 <div className="mb-2 flex flex-row justify-center">
                   <BiMap size={20} />
