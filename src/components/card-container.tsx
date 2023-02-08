@@ -20,7 +20,7 @@ export default function CardContainer() {
                 <Image
                   alt="personal picture"
                   src={PersonalImg}
-                  className="z-10 -mt-16 rounded-full border-none align-middle shadow-xl"
+                  className="h-50 w-50 z-10 -mt-16 rounded-full border-none align-middle shadow-xl"
                   width={150}
                   height={100}
                 />

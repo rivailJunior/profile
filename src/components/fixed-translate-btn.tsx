@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import { MdLanguage } from "react-icons/md";
+import { SiGoogletranslate } from "react-icons/si";
 import useTranslate from "../hooks/useTranslate";
 const gradientBR =
-  " bg-gradient-to-r from-emerald-500 to-emerald-600 text-gray-100";
+  " bg-gradient-to-r from-emerald-500 to-emerald-600 text-gray-100 ";
 
 const gradientEN =
   " bg-gradient-to-r from-blue-800 to-indigo-900 text-gray-100 ";
@@ -13,7 +13,7 @@ export default function FixedTranslateButton() {
   const { asPath } = useRouter();
   const { isBR } = useTranslate();
   return (
-    <div className="fixed top-4 right-5 z-10 ">
+    <div className="fixed top-4 right-10 z-10 ">
       <Link
         href={asPath}
         locale={isBR ? "en" : "pt"}
@@ -22,8 +22,7 @@ export default function FixedTranslateButton() {
           isBR ? gradientEN : gradientBR
         }`}
       >
-        <MdLanguage size={22} />
-        {isBR ? "En" : "Pt"}
+        <SiGoogletranslate size={20} />
       </Link>
     </div>
   );
