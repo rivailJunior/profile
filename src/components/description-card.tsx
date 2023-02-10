@@ -45,10 +45,13 @@ const DescriptionWithIcon = ({
 export default function DescriptionCard() {
   const { t } = useTranslate();
   return (
-    <section className="relative mx-auto h-5/6 w-5/6 bg-white px-10">
+    <section className="max-w-xs:w-full relative mx-auto bg-white px-10 py-10 md:h-5/6 md:w-5/6">
       <div className="container mx-auto">
-        <div className="relative flex h-full flex-row items-center align-middle">
-          <div className="relative h-40 w-2/12">
+        <section className="relative flex h-full flex-col items-center align-middle md:flex-row">
+          <div
+            id="img_container"
+            className="relative h-60 w-full md:h-40 md:w-2/12"
+          >
             <Image
               src={PersonalImg}
               alt="Rivail Santos"
@@ -58,10 +61,13 @@ export default function DescriptionCard() {
             />
           </div>
 
-          <div className="mx-auto ml-10 w-2/6 ">
+          <div
+            id="description_container"
+            className="mx-auto w-full md:ml-10 md:w-2/3 "
+          >
             <Transition show={true} appear>
               <FadeInComponent delay="delay-[300ms]">
-                <h3 className="mb-2 mb-2 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
+                <h3 className="mb-2 mb-2 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-center text-4xl font-semibold leading-normal text-transparent md:text-left">
                   Rivail Santos
                 </h3>
               </FadeInComponent>
@@ -89,14 +95,17 @@ export default function DescriptionCard() {
               </DescriptionWithIcon>
             </div>
           </div>
-        </div>
-        <div className="relative ml-60 flex h-full flex-row items-center px-8 py-10">
+        </section>
+        <section
+          id="about_me_container"
+          className="relative flex h-full flex-row items-center py-10 md:ml-32 lg:ml-44 xl:ml-72"
+        >
           <div className="container flex flex-wrap">
-            <p className="text-md text-justify leading-relaxed text-gray-600">
+            <div className="text-md text-justify leading-relaxed text-gray-600">
               {t.card_about_me}
-            </p>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );
