@@ -1,144 +1,71 @@
-import { FaFacebook, FaTwitter, FaYoutube, FaGit } from "react-icons/fa";
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import { FaTwitter, FaInstagram, FaGit, FaLinkedin } from "react-icons/fa";
+import useTranslate from "../hooks/useTranslate";
+import { Transition } from "@headlessui/react";
+import FadeInComponent from "./fadeInComponent";
 
 export default function Footer() {
+  const { t } = useTranslate();
+
+  const handleClickSocial = (url: string) => {
+    window.open(url, "_target");
+  };
   return (
-    <footer className="relative bg-gray-100 pt-8 pb-6">
-      <div
-        className="pointer-events-none absolute bottom-auto top-0 left-0 right-0 -mt-20 w-full overflow-hidden"
-        style={{ height: "80px" }}
-      >
-        <svg
-          className="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            className="fill-current text-gray-100"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
-      <div className="container mx-auto flex flex-row justify-center">
-        <div className="flex ">
-          <div className="w-full">
-            <h4 className="text-2xl font-semibold">{`Let's keep in touch!`}</h4>
-            <h5 className="mt-0 mb-2 text-lg text-gray-700">
-              Find me on any social profiles
-            </h5>
-            <div className="mt-6">
+    <footer className="relative mt-10 pb-5">
+      <div className="container mx-auto flex flex-col items-center justify-center text-white">
+        <div className="mb-2 font-light uppercase">
+          {t.footer.social_midia_call_to_action}
+        </div>
+        <Transition show appear>
+          <div className="mt-2 flex flex-row items-center justify-between  align-middle">
+            <FadeInComponent delay="delay-[100ms]">
               <button
-                className="align-center mr-2 h-10 w-10 items-center justify-center rounded-full bg-blue-200 p-3 font-normal text-white shadow-lg outline-none focus:outline-none"
+                className="m-1 h-10 w-10 rounded-full bg-blue-400 p-3 font-normal text-white shadow-lg hover:bg-blue-300"
                 type="button"
+                onClick={() =>
+                  handleClickSocial("https://twitter.com/rivaildossantos")
+                }
               >
                 <FaTwitter />
               </button>
+            </FadeInComponent>
+            <FadeInComponent delay="delay-[200ms]">
               <button
-                className="align-center mr-2 h-10 w-10 items-center justify-center rounded-full bg-blue-400 p-3 font-normal text-white shadow-lg outline-none focus:outline-none"
+                className="m-1 h-10 w-10 rounded-full bg-pink-600 p-3 font-normal text-white shadow-lg hover:bg-pink-500"
                 type="button"
+                onClick={() =>
+                  handleClickSocial("https://www.instagram.com/rivailpinto/")
+                }
               >
-                <FaFacebook />
+                <FaInstagram />
               </button>
+            </FadeInComponent>
+            <FadeInComponent delay="delay-[300ms]">
               <button
-                className="align-center mr-2 h-10 w-10 items-center justify-center rounded-full bg-red-500 p-3 font-normal text-white shadow-lg outline-none focus:outline-none"
+                className="m-1 h-10 w-10 rounded-full bg-blue-600 p-3 font-normal text-white shadow-lg hover:bg-blue-500"
                 type="button"
+                onClick={() =>
+                  handleClickSocial(
+                    "https://www.linkedin.com/in/rivail-santos-14373997/"
+                  )
+                }
               >
-                <FaYoutube />
+                <FaLinkedin />
               </button>
+            </FadeInComponent>
+            <FadeInComponent delay="delay-[400ms]">
               <button
-                className="align-center mr-2 h-10 w-10 items-center justify-center rounded-full bg-gray-800 p-3 font-normal text-white shadow-lg outline-none focus:outline-none"
+                className="m-1 h-10 w-10  rounded-full bg-gray-800 p-3 font-normal text-white shadow-lg outline-none hover:bg-gray-700 focus:outline-none"
                 type="button"
+                onClick={() =>
+                  handleClickSocial("https://github.com/rivailJunior")
+                }
               >
                 <FaGit />
               </button>
-            </div>
+            </FadeInComponent>
           </div>
-          {/* <div className="w-full px-4 lg:w-6/12">
-              <div className="items-top mb-6 flex flex-wrap">
-                <div className="ml-auto w-full px-4 lg:w-4/12">
-                  <span className="mb-2 block text-sm font-semibold uppercase text-gray-600">
-                    Useful Links
-                  </span>
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-                        href="https://www.creative-tim.com/presentation"
-                      >
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-                        href="https://blog.creative-tim.com"
-                      >
-                        Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-                        href="https://www.github.com/creativetimofficial"
-                      >
-                        Github
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-                        href="https://www.creative-tim.com/bootstrap-themes/free"
-                      >
-                        Free Products
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="w-full px-4 lg:w-4/12">
-                  <span className="mb-2 block text-sm font-semibold uppercase text-gray-600">
-                    Other Resources
-                  </span>
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-                        href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                      >
-                        MIT License
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-                        href="https://creative-tim.com/terms"
-                      >
-                        Terms & Conditions
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-                        href="https://creative-tim.com/privacy"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="block pb-2 text-sm font-semibold text-gray-700 hover:text-gray-900"
-                        href="https://creative-tim.com/contact-us"
-                      >
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div> */}
-        </div>
+        </Transition>
       </div>
     </footer>
   );

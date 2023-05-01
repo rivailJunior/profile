@@ -4,5 +4,9 @@
   "card_current_job": "Current",
   "card_job_title": "Sr Front-End Engineer",
   "card_degree_title": "Computer Science - Uninorte Laureate",
-  "card_about_me": "With over 10 years of experience, most part of it working with JavaScript, React, and React-Native. My experience has allowed me to develop a wide range of applications, from simple single-feature apps to complex enterprise software. I have experience with different Map API libraries, Payment gateway, e-Commerce platforms, ERP systems, and Cashback systems. I am well-versed in other related technologies, such as PHP and Node.js. Currently, I am working with payment and e-commerce platforms. Overall, I am confident in my ability to deliver robust and high-quality applications using JavaScript, Node.js, React, and React-Native."
+  "card_about_me": "With over 10 years of experience, most part of it working with JavaScript, React, and React-Native. My experience has allowed me to develop a wide range of applications, from simple single-feature apps to complex enterprise software. I have experience with different Map API libraries, Payment gateway, e-Commerce platforms, ERP systems, and Cashback systems. I am well-versed in other related technologies, such as PHP and Node.js. Currently, I am working with payment and e-commerce platforms. Overall, I am confident in my ability to deliver robust and high-quality applications using JavaScript, Node.js, React, and React-Native.",
+  "footer": {
+    "keep_in_touch": "Let's keep in touch",
+    "social_midia_call_to_action": "my social profiles"
+  }
 }
