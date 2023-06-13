@@ -2,12 +2,15 @@ import "../../src/styles/globals.css";
 
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
+import React from "react";
+import { IPageProps } from "../../src/interfaces/pages";
 
 export function generateStaticParams() {
   return [{locale: 'en'}, {locale: 'pt'}];
 }
 
-export default async function LocaleLayout({children, params: {locale}}) {
+
+export default async function LocaleLayout({children, params: {locale}}: IPageProps) {
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
