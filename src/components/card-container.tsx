@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-"use client"
+"use client";
 import Image from "next/image";
 import { BiMap, BiBriefcase } from "react-icons/bi";
 import { MdOutlineSchool } from "react-icons/md";
 import { PersonalImg } from "../assets/images";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 import FadeInComponent from "./fadeInComponent";
 import { Transition } from "@headlessui/react";
 
 export default function CardContainer() {
-  const t  = useTranslations();
+  const t = useTranslations();
 
   return (
     <div className="relative pt-36">
@@ -28,7 +28,7 @@ export default function CardContainer() {
               </div>
             </div>
             <div className="container relative pt-20">
-              <div className="flex justify-center  lg:pt-4">
+              <div className="max-w-xs:pt-40 flex justify-center lg:pt-4 ">
                 <div className="mr-4 text-center">
                   <span className="text-sm text-gray-500">
                     {t("card_fav_stack")}
@@ -65,7 +65,7 @@ export default function CardContainer() {
                 </FadeInComponent>
               </Transition>
 
-              <div className="mt-0 mb-2 text-sm font-bold capitalize leading-normal text-gray-500">
+              <div className="mb-2 mt-0 text-sm font-bold capitalize leading-normal text-gray-500">
                 <div className="mb-2 flex flex-row justify-center">
                   <BiMap size={20} />
                   <span className="ml-2">Manaus, AM - Brasil</span>

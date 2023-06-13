@@ -7,7 +7,7 @@ import {
 
 export default function Profile() {
   return (
-    <div>
+    <div className="bg-gray-700">
       <div className="profile-page">
         <CardContainer />
         <FixedTranslateButton />

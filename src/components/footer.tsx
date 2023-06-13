@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-"use client"
+"use client";
 import { FaTwitter, FaInstagram, FaGit, FaLinkedin } from "react-icons/fa";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 import { Transition } from "@headlessui/react";
 import FadeInComponent from "./fadeInComponent";
 
@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <div className="relative mt-10 pb-5">
       <div className="container mx-auto flex flex-col items-center justify-center text-white">
-        <div className="mb-2 font-light uppercase text-gray-500">
+        <div className="mb-2 font-light capitalize text-gray-200 ">
           {t("social_midia_call_to_action")}
         </div>
         <Transition show appear>
