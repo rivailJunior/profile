@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { PersonalImg } from "../assets/images";
-import useTranslate from "../hooks/useTranslate";
 import FadeInComponent from "./fadeInComponent";
 import { Transition } from "@headlessui/react";
 import { MdOutlineSchool } from "react-icons/md";
 import { BiMap, BiBriefcase } from "react-icons/bi";
+import {useTranslations} from 'next-intl';
 
 const DescriptionText = ({
   title,
@@ -43,7 +43,8 @@ const DescriptionWithIcon = ({
 };
 
 export default function DescriptionCard() {
-  const { t } = useTranslate();
+  const t = useTranslations();
+
   return (
     <section className="max-w-xs:w-full relative mx-auto bg-white px-10 py-10 md:h-5/6 md:w-5/6">
       <div className="container mx-auto">
@@ -73,21 +74,21 @@ export default function DescriptionCard() {
               </FadeInComponent>
             </Transition>
             <div className="flex flex-row">
-              <DescriptionText title={t.card_fav_stack} subtitle="Javascript" />
-              <DescriptionText title={t.card_experience} subtitle="10" />
-              <DescriptionText title={t.card_current_job} subtitle="Addi" />
+              <DescriptionText title={t("card_fav_stack")} subtitle="Javascript" />
+              <DescriptionText title={t("card_experience")} subtitle="10" />
+              <DescriptionText title={t("card_current_job")} subtitle="Addi" />
             </div>
             <div className="flex flex-col items-start justify-start pt-5 align-middle">
               <DescriptionWithIcon title="Manaus, Am - Brasil">
                 <BiMap size={20} />
               </DescriptionWithIcon>
-              <DescriptionWithIcon title={t.card_job_title}>
+              <DescriptionWithIcon title={t("card_job_title")}>
                 <BiBriefcase
                   size={20}
                   className="fas fa-briefcase mr-2 text-lg text-gray-500"
                 />
               </DescriptionWithIcon>
-              <DescriptionWithIcon title={t.card_degree_title}>
+              <DescriptionWithIcon title={t("card_degree_title")}>
                 <MdOutlineSchool
                   size={20}
                   className="fas fa-university mr-2 text-lg text-gray-500"
@@ -102,7 +103,7 @@ export default function DescriptionCard() {
         >
           <div className="container flex flex-wrap">
             <div className="text-md text-justify leading-relaxed text-gray-600">
-              {t.card_about_me}
+              {t("card_about_me")}
             </div>
           </div>
         </section>

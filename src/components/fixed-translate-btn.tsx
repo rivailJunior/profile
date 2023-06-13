@@ -9,12 +9,9 @@ const gradientBR =
 const gradientEN =
   " bg-gradient-to-r from-blue-800 to-indigo-900 text-gray-100 ";
 
-  type TButton = {
-    locale: string
-  }
-export default function FixedTranslateButton({locale}: TButton) {
+export default function FixedTranslateButton() {
 
-  const { isBR } = useTranslate(locale);
+  const { isBR } = useTranslate();
   return (
     <div className="fixed top-4 right-10 z-10 ">
       <Link

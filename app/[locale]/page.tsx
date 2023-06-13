@@ -4,14 +4,13 @@ import {
   CardContainer,
   FixedTranslateButton,
 } from "../../src/components";
-import { IPageProps } from "../../src/interfaces/pages";
 
-export default function Profile({params: { locale }}: IPageProps) {
+export default function Profile() {
   return (
     <div>
       <div className="profile-page">
         <CardContainer />
-        <FixedTranslateButton locale={locale}/>
+        <FixedTranslateButton />
       </div>
       <Footer />
     </div>
