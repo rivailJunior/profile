@@ -1,17 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+"use client"
 import Image from "next/image";
 import { BiMap, BiBriefcase } from "react-icons/bi";
 import { MdOutlineSchool } from "react-icons/md";
 import { PersonalImg } from "../assets/images";
-import useTranslate from "../hooks/useTranslate";
+import {useTranslations} from 'next-intl';
 import FadeInComponent from "./fadeInComponent";
 import { Transition } from "@headlessui/react";
 
 export default function CardContainer() {
-  const { t } = useTranslate();
+  const t  = useTranslations();
 
   return (
-    <section className="relative pt-36">
+    <div className="relative pt-36">
       <div className="container mx-auto px-4">
         <div className="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
           <div className="container">
@@ -30,7 +31,7 @@ export default function CardContainer() {
               <div className="flex justify-center  lg:pt-4">
                 <div className="mr-4 text-center">
                   <span className="text-sm text-gray-500">
-                    {t.card_fav_stack}
+                    {t("card_fav_stack")}
                   </span>
 
                   <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
@@ -39,7 +40,7 @@ export default function CardContainer() {
                 </div>
                 <div className="mr-4 text-center">
                   <span className="text-sm text-gray-500">
-                    {t.card_experience}
+                    {t("card_experience")}
                   </span>
                   <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
                     10
@@ -47,7 +48,7 @@ export default function CardContainer() {
                 </div>
                 <div className="mr-4 text-center">
                   <span className="text-sm text-gray-500">
-                    {t.card_current_job}
+                    {t("card_current_job")}
                   </span>
                   <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
                     Addi
@@ -76,7 +77,7 @@ export default function CardContainer() {
                     size={20}
                     className="fas fa-briefcase mr-2 text-lg text-gray-500"
                   />
-                  <span className="ml-2">{t.card_job_title}</span>
+                  <span className="ml-2">{t("card_job_title")}</span>
                 </div>
               </div>
               <div className="mb-2 mt-5 text-sm font-bold capitalize leading-normal text-gray-500">
@@ -85,7 +86,7 @@ export default function CardContainer() {
                     size={20}
                     className="fas fa-university mr-2 text-lg text-gray-500"
                   />
-                  <span className="ml-2">{t.card_degree_title}</span>
+                  <span className="ml-2">{t("card_degree_title")}</span>
                 </div>
               </div>
             </div>
@@ -93,7 +94,7 @@ export default function CardContainer() {
               <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4 lg:w-9/12">
                   <p className="mb-2 text-justify text-lg leading-relaxed text-gray-600">
-                    {t.card_about_me}
+                    {t("card_about_me")}
                   </p>
                 </div>
               </div>
@@ -101,6 +102,6 @@ export default function CardContainer() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

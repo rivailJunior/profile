@@ -1,20 +1,21 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+"use client"
 import { FaTwitter, FaInstagram, FaGit, FaLinkedin } from "react-icons/fa";
-import useTranslate from "../hooks/useTranslate";
+import {useTranslations} from 'next-intl';
 import { Transition } from "@headlessui/react";
 import FadeInComponent from "./fadeInComponent";
 
 export default function Footer() {
-  const { t } = useTranslate();
+  const t = useTranslations("footer");
 
   const handleClickSocial = (url: string) => {
     window.open(url, "_target");
   };
   return (
-    <footer className="relative mt-10 pb-5">
+    <div className="relative mt-10 pb-5">
       <div className="container mx-auto flex flex-col items-center justify-center text-white">
         <div className="mb-2 font-light uppercase">
-          {t.footer.social_midia_call_to_action}
+          {t("social_midia_call_to_action")}
         </div>
         <Transition show appear>
           <div className="mt-2 flex flex-row items-center justify-between  align-middle">
@@ -67,6 +68,6 @@ export default function Footer() {
           </div>
         </Transition>
       </div>
-    </footer>
+    </div>
   );
 }

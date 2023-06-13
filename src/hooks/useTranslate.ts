@@ -1,9 +1,10 @@
-import { useRouter } from "next/router";
-import { getTranslation } from "../helper/i18n-helper";
+"use client"
+import { useRouter } from "next/navigation";
+// import { getTranslation } from "../helper/i18n-helper";
 
-export default function useTranslate() {
+export default function useTranslate(locale: string) {
   const router = useRouter();
-  const { locale } = router;
+  // const { locale } = router;
 
   /*TODO: inspect this function*/
   const changeLanguage = async (language: string) => {
@@ -12,5 +13,5 @@ export default function useTranslate() {
 
   const isBR = locale === "pt";
 
-  return { t: getTranslation(locale), changeLanguage, isBR };
+  return { changeLanguage, isBR };
 }

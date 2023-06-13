@@ -17,9 +17,10 @@
   "dependencies": {
     "@headlessui/react": "^1.7.10",
     "husky": "^8.0.3",
-    "next": "13.1.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.4.5",
+    "next-intl": "^2.14.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "zod": "^3.20.2"
   },
@@ -47,5 +48,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "volta": {
+    "node": "16.20.0"
   }
 }

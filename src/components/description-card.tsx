@@ -50,7 +50,7 @@ export default function DescriptionCard() {
         <section className="relative flex h-full flex-col items-center align-middle md:flex-row">
           <div
             id="img_container"
-            className="relative h-60 w-full md:h-40 md:w-2/12"
+            className="relative h-60 w-full md:h-40 md:w-2/12 xl:h-72"
           >
             <Image
               src={PersonalImg}
