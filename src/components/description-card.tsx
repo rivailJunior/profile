@@ -5,7 +5,7 @@ import FadeInComponent from "./fadeInComponent";
 import { Transition } from "@headlessui/react";
 import { MdOutlineSchool } from "react-icons/md";
 import { BiMap, BiBriefcase } from "react-icons/bi";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 
 const DescriptionText = ({
   title,
@@ -30,7 +30,7 @@ const DescriptionWithIcon = ({
   title,
 }: {
   title: string;
-  children: JSX.Element;
+  children: React.ReactNode;
 }) => {
   return (
     <div className="mb-2 text-sm font-bold capitalize leading-normal text-gray-500">
@@ -74,7 +74,10 @@ export default function DescriptionCard() {
               </FadeInComponent>
             </Transition>
             <div className="flex flex-row">
-              <DescriptionText title={t("card_fav_stack")} subtitle="Javascript" />
+              <DescriptionText
+                title={t("card_fav_stack")}
+                subtitle="Javascript"
+              />
               <DescriptionText title={t("card_experience")} subtitle="10" />
               <DescriptionText title={t("card_current_job")} subtitle="Addi" />
             </div>

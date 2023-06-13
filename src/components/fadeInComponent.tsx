@@ -5,7 +5,7 @@ export default function FadeInComponent({
   delay,
   children,
 }: {
-  children: JSX.Element;
+  children: React.ReactNode;
   delay: string;
 }) {
   return (

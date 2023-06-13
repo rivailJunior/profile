@@ -1,4 +1,6 @@
+import React from "react";
+
 export interface IPageProps {
-	children?: React.ReactNode,
-	params?: any
-  }
+  children?: React.ReactNode;
+  params?: any;
+}
