@@ -2,5 +2,5 @@ import React from "react";
 
 export interface IPageProps {
   children?: React.ReactNode;
-  params?: any;
+  params: { locale: string };
 }
