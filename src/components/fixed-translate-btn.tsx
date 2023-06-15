@@ -1,5 +1,5 @@
+"use client"
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
 import { SiGoogletranslate } from "react-icons/si";
 import useTranslate from "../hooks/useTranslate";
@@ -10,12 +10,12 @@ const gradientEN =
   " bg-gradient-to-r from-blue-800 to-indigo-900 text-gray-100 ";
 
 export default function FixedTranslateButton() {
-  const { asPath } = useRouter();
+
   const { isBR } = useTranslate();
   return (
     <div className="fixed top-4 right-10 z-10 ">
       <Link
-        href={asPath}
+        href={`${isBR ? "/en" : "/pt"}`}
         locale={isBR ? "en" : "pt"}
         type="button"
         className={`flex items-center justify-center rounded-full p-2 align-middle text-sm font-light shadow-gray-600 hover:cursor-pointer ${

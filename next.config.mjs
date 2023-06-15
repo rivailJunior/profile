@@ -10,12 +10,15 @@ const config = {
   reactStrictMode: true,
   /* If trying out the experimental appDir, comment the i18n config out
    * @see https://github.com/vercel/next.js/issues/41980 */
-  i18n: {
-    locales: ["en", "pt"],
-    defaultLocale: "pt",
+  // i18n: {
+  //   locales: ["en", "pt"],
+  //   defaultLocale: "pt",
+  // },
+  experimental: {
+    appDir: true,
   },
-  images: {
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-  },
+  // images: {
+  //   deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+  // },
 };
 export default config;
