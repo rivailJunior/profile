@@ -1,10 +1,14 @@
 {
   "card_fav_stack": "Stack Favorita",
-  "card_experience": "Tempo de Carreira",
+  "card_experience": "Javascript | Typescript | NodeJs - NestJs, ExpressJs | ReactJs - NextJs, Remix, Vite | React-Native - Expo | AWS",
   "card_current_job": "Atual",
-  "card_job_title": "Eng. Front-End Sr",
-  "card_degree_title": "Ciência da Computação - Uninorte Laureate",
-  "card_about_me": "Com mais de 10 anos de experiência, a maioria trabalhando com JavaScript, React e React-Native. Minha experiência me permitiu desenvolver uma ampla gama de aplicativos, desde simples aplicativos até sistemas complexos tais como e-Commerce. Tenho experiência com diferentes bibliotecas de Mapas, gateways de pagamento, e-Commerce, ERP e sistemas de CashBack. Estou bem familiarizado com outras tecnologias relacionadas ao mundo web como PHP e Nodejs. Atualmente, estou trabalhando com plataformas de pagamento e comércio eletrônico. Tenho plena confiança na capacidade de entregar plataformas robustas e de alta qualidade usando JavaScript, Node, React e React-Native.",
+  "card_job_title": "Sr Front-End",
+  "card_degree_title": "Ciência da Computação",
+  "about_me": {
+    "description_1": "Com uma década de experiência, em sua maioria, dedicada ao desenvolvimento com JavaScript para plataformas web e mobile, possuo um background que me permite trabalhar desde aplicativos de Mapa (POI) até E-Commerces.",
+    "description_2": "Ao longo da jornada tive a oportunidade de trablhar com equipes mais enxutas e menores, mas atualmente trabalho com equipes grandes e espalhadas pela América Latina. Hoje atuo como engenheiro Fron-End Sr na Addi no desenvolvimento de uma plataforma de alta demanda, atendendo a um grande número de usuários.",
+    "description_3": "Acredito na importância de oferecer soluções de alto desempenho e confiabilidade para atender às necessidades dos usuários em tempo real. Minha experiência me preparou para lidar com desafios relacionados à escalabilidade, otimização e entrega ágil, garantindo que os aplicativos sejam desenvolvidos e aprimorados com a máxima eficiência."
+  },
   "footer": {
     "keep_in_touch": "Vamos manter contato",
     "social_midia_call_to_action": "Minhas redes sociais"

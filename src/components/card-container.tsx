@@ -5,11 +5,10 @@ import { BiMap, BiBriefcase } from "react-icons/bi";
 import { MdOutlineSchool } from "react-icons/md";
 import { PersonalImg } from "../assets/images";
 import { useTranslations } from "next-intl";
-import FadeInComponent from "./fadeInComponent";
-import { Transition } from "@headlessui/react";
 
 export default function CardContainer() {
-  const t = useTranslations();
+  const t = useTranslations("");
+  const aboutMeTranslations = useTranslations("about_me");
 
   return (
     <div className="relative pt-36">
@@ -27,45 +26,14 @@ export default function CardContainer() {
                 />
               </div>
             </div>
-            <div className="container relative pt-20">
-              <div className="max-w-xs:pt-40 flex justify-center lg:pt-4 ">
-                <div className="mr-4 text-center">
-                  <span className="text-sm text-gray-500">
-                    {t("card_fav_stack")}
-                  </span>
-
-                  <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
-                    Javascript
-                  </span>
-                </div>
-                <div className="mr-4 text-center">
-                  <span className="text-sm text-gray-500">
-                    {t("card_experience")}
-                  </span>
-                  <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
-                    10
-                  </span>
-                </div>
-                <div className="mr-4 text-center">
-                  <span className="text-sm text-gray-500">
-                    {t("card_current_job")}
-                  </span>
-                  <span className="block text-xl font-bold capitalize tracking-wide text-gray-700">
-                    Addi
-                  </span>
-                </div>
+            <div className="mt-5 pt-20 text-center">
+              <h3 className="mb-0 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
+                Rivail Pinto
+              </h3>
+              <div className="mb-5 text-center text-sm font-semibold leading-normal text-gray-500 max-sm:px-10">
+                {t("card_experience")}
               </div>
-            </div>
-            <div className="mt-5 text-center">
-              <Transition show={true} appear>
-                <FadeInComponent delay="delay-[300ms]">
-                  <h3 className="mb-2 mb-2 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
-                    Rivail Santos
-                  </h3>
-                </FadeInComponent>
-              </Transition>
-
-              <div className="mb-2 mt-0 text-sm font-bold capitalize leading-normal text-gray-500">
+              <div className="mb-1 mt-0 text-sm font-bold capitalize leading-normal text-gray-500">
                 <div className="mb-2 flex flex-row justify-center">
                   <BiMap size={20} />
                   <span className="ml-2">Manaus, AM - Brasil</span>
@@ -90,11 +58,17 @@ export default function CardContainer() {
                 </div>
               </div>
             </div>
-            <div className="mt-10 border-t border-gray-300 py-10 text-center">
+            <div className="mt-10 border-t border-gray-300 px-10 py-10 text-center">
               <div className="flex flex-wrap justify-center">
                 <div className="w-full px-4 lg:w-9/12">
                   <p className="mb-2 text-justify text-lg leading-relaxed text-gray-600">
-                    {t("card_about_me")}
+                    {aboutMeTranslations("description_1")}
+                  </p>
+                  <p className="mb-2 text-justify text-lg leading-relaxed text-gray-600">
+                    {aboutMeTranslations("description_2")}
+                  </p>
+                  <p className="mb-2 text-justify text-lg leading-relaxed text-gray-600">
+                    {aboutMeTranslations("description_3")}
                   </p>
                 </div>
               </div>
