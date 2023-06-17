@@ -27,9 +27,12 @@ export default function CardContainer() {
               </div>
             </div>
             <div className="mt-5 pt-20 text-center">
-              <h3 className="mb-2 mb-2 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
+              <h3 className="mb-0 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
                 Rivail Pinto
               </h3>
+              <div className="mb-5 text-center text-sm font-semibold leading-normal text-gray-500 max-sm:px-10">
+                {t("card_experience")}
+              </div>
               <div className="mb-1 mt-0 text-sm font-bold capitalize leading-normal text-gray-500">
                 <div className="mb-2 flex flex-row justify-center">
                   <BiMap size={20} />

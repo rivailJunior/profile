@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <div className="relative mt-10 pb-5">
       <div className="container mx-auto flex flex-col items-center justify-center text-white">
-        <div className="mb-2 font-light capitalize text-gray-200 ">
+        <div className="mb-2 font-light capitalize text-gray-200">
           {t("social_midia_call_to_action")}
         </div>
         <div className="mt-2 flex flex-row items-center justify-between  align-middle">
