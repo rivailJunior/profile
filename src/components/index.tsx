@@ -1,3 +1,4 @@
+export { default as CardSkills } from "./card-skills";
 export { default as Footer } from "./footer";
 export { default as CardContainer } from "./card-container";
 // export { default as HeaderImage } from "./header-image";
