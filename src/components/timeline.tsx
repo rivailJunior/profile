@@ -3,6 +3,7 @@ import React from "react";
 
 import type { IExperience } from "../interfaces/experiences";
 import { useTranslations } from "next-intl";
+import { JobExperienceSkillsData } from "../mock/stack-data";
 
 type ITimeline = {
   data: IExperience[];
@@ -32,6 +33,9 @@ const TimeLineItem = ({ item }: { item: IExperience }) => {
       <p className="mb-1 pr-2 text-justify text-base font-normal text-gray-500 dark:text-gray-600">
         {item.description}
       </p>
+      <p className="mb-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+        {item.skills?.join(", ")}
+      </p>
     </li>
   );
 };
@@ -54,36 +58,49 @@ export default function TimeLine() {
       position: t("addi.position"),
       period: t("addi.period"),
       description: t("addi.description"),
+      skills: JobExperienceSkillsData[0]?.skills,
     },
     {
       company: t("olist.company"),
       position: t("olist.position"),
       period: t("olist.period"),
       description: t("olist.description"),
+      skills: JobExperienceSkillsData[1]?.skills,
     },
     {
       company: t("tarkuss.company"),
       position: t("tarkuss.position"),
       period: t("tarkuss.period"),
       description: t("tarkuss.description"),
+      skills: JobExperienceSkillsData[2]?.skills,
     },
     {
       company: t("itriad.company"),
       position: t("itriad.position"),
       period: t("itriad.period"),
       description: t("itriad.description"),
+      skills: JobExperienceSkillsData[3]?.skills,
+    },
+    {
+      company: t("axm.company"),
+      position: t("axm.position"),
+      period: t("axm.period"),
+      description: t("axm.description"),
+      skills: JobExperienceSkillsData[4]?.skills,
     },
     {
       company: t("novaera.company"),
       position: t("novaera.position"),
       period: t("novaera.period"),
       description: t("novaera.description"),
+      skills: JobExperienceSkillsData[5]?.skills,
     },
     {
       company: t("adptdata.company"),
       position: t("adptdata.position"),
       period: t("adptdata.period"),
       description: t("adptdata.description"),
+      skills: JobExperienceSkillsData[6]?.skills,
     },
   ];
   return <Line data={data} />;
