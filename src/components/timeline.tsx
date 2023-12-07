@@ -38,7 +38,7 @@ const TimeLineItem = ({ item }: { item: IExperience }) => {
 
 function Line({ data }: ITimeline) {
   return (
-    <ol className="relative mt-10 rounded-lg border-gray-200 bg-white">
+    <ol className="relative rounded-lg border-gray-200 bg-white">
       {data?.map((item) => {
         return <TimeLineItem item={item} key={item.company} />;
       })}
