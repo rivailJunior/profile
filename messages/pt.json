@@ -7,12 +7,56 @@
   "card_skills": "Conhecimento técnico",
   "card_years": "anos",
   "about_me": {
-    "description_1": "Com uma década de experiência, em sua maioria, dedicada ao desenvolvimento com JavaScript para plataformas web e mobile, possuo um background que me permite trabalhar desde aplicativos de Mapa (POI) até E-Commerces.",
-    "description_2": "Ao longo da jornada tive a oportunidade de trablhar com equipes mais enxutas e menores, mas atualmente trabalho com equipes grandes e espalhadas pela América Latina. Hoje atuo como engenheiro Fron-End Sr na Addi no desenvolvimento de uma plataforma de alta demanda, atendendo a um grande número de usuários.",
+    "description_1": "Sou um engenheiro Full-Stack apaixonado por tecnologias web, com 10 anos de atuação na área. Em busca de ótimos desafios para aplicar meu sólido conhecimento em Node, React, React-Native e outras tecnologias, contribuindo para o sucesso da equipe e alinhando-me às metas estratégicas da empresa",
+    "description_2": "Ao longo da jornada trabalhei desde equipes mais enxutas e menore até a grandes equipes espalhadas pela América Latina. Hoje atuo como engenheiro Fron-End. Na minha mais recente posição trabalhei com Addi, uma plataforma de e-commerce que atende a um grande número de usuários.",
     "description_3": "Acredito na importância de oferecer soluções de alto desempenho e confiabilidade para atender às necessidades dos usuários em tempo real. Minha experiência me preparou para lidar com desafios relacionados à escalabilidade, otimização e entrega ágil, garantindo que os aplicativos sejam desenvolvidos e aprimorados com a máxima eficiência."
   },
   "footer": {
     "keep_in_touch": "Vamos manter contato",
     "social_midia_call_to_action": "Minhas redes sociais"
+  },
+  "experience": {
+    "addi": {
+      "company": "Addi, America Latina",
+      "position": "Engenheiro Front-End Sr",
+      "period": "Maio 2022 - Novembro 2023",
+      "description": "Fiz parte dos time de Services e posteriormente de Shop. Reescrevi a solução de pagamento para no mercado Brasileiro - com pix parcelado - e para o mercado no colombiano. Reimplementando a plataforma desde a funcionalidade de contas a pagar (na home page do app) até o checkout de pagamentos com bancos parceiros. Na Addi fui desde desenvolvimento de atividades voltadas para pagamento, lead de novos lojistas e também participava ativamente do processo de levantamento de requisitos para novos produtos e modelagem da solução."
+    },
+    "olist": {
+      "company": "Olist, Brasil",
+      "position": "Engenheiro Front-End Sr",
+      "period": "Junho 2021 - Maio 2022",
+      "description": "Fiz parte de soluções de crescimento estratégico, voltado para lead de novos vendedores para a plataforma. Junto a Olist tive a oportunidade de estar fazer parte de um projeto focado em clientes lojistas. Nosso objetivo era melhorar a entrada de novos clientes para a plataforma, facilitando o cadastro e os demais meios de pagamento a partir dessa inicial experiencia. Na Olist tive papel importante na construção de uma nova arquitetura para o time de front-end, ajudando a implementar o primeiro back-end for front-end da equipe de front. Fui papel importante também na construção de um CLI da empresa, ajudando os desenvolvedores a criarem projetos a partir de alguns comandos no terminal."
+    },
+    "tarkuss": {
+      "company": "Tarkus, Brasil",
+      "position": "Líder técnico e EngenheiroFront-End Sr",
+      "period": "Maio 2019 - Maio 2021",
+      "description": "Na Tarkuss fiz parte do time de gestão dos projetos, planejando o desenvolvimento, ornaizando as demandas e distribuindo as tarefas. Fui o responsável por criar a estrutura do time (frontend e backend), selecionando as stack necessárias e a arquitetura a ser usada. Ajudei tambem a montar as equipes, realizando as entrevistas iniciais e técnicas. Meu maior desafio foi liderar o time para a plataforma de CashBack -  www.zeussapp.com.br - de um grande lojista parceiro. O Zeuss é CRM com um adicional de CashBack. Destaco o papel importante na contratação da cloud quanto dos provedores de envio de notificações via sms e e-mail."
+    },
+    "itriad": {
+      "company": "Instituto Itriad, Brasil",
+      "position": "Engenheiro Front-End Sr",
+      "period": "Outubro 2016 - Abril 2019",
+      "description": "Fiz parte de dois times dentro da Itriad, GlobalTool - Alcatel Onetouch - e Kaios. No Globaltool atendia pelo time de suporte, realizando tarefazes de manutencao da plataforma e desenvolvimento de novas funcionalidades. Pouco mais de 4 meses depois tive a oportunidade de me juntar ao time do Kaios. No Kaios realizei trabalho de planejamento e desenvolvimento de Aplicativos Mobile (react.js) para KaiOS (Mozilla Mobile). Desenvolvi algumas aplicações como Kay Map (POI), Kay Music, Settings, Kay Activity Todo List e Kay Exchange."
+    },
+    "axm & transire": {
+      "company": "Instituto AXM, Brasil",
+      "position": "Engenheiro Full-Stack Pl",
+      "period": "Outubro 2015 - Outubro 2016.",
+      "description": "A AXM foi a primeira oportunidade de trabalhar com Pagamentos Eletronicos. Participei da criação do sistema implementando desde a parte do gateway de pagamento, conciliação de vendas e gerenciamento de dashboard do cliente. Ajudei na implementação da API de notificação de transações realizadas no terminal POS para clientes que possuiam o Back-Office próprio. Fiz parte também do time que desenvolveu uma API e um PDV web complementado todo o CMS da Whirlpool para o controle de estoque e conciliação de controle de vendas."
+    },
+    "novaera": {
+      "company": "Mercantil Nova Era, Brasil",
+      "position": "Engenheiro Full-Stack",
+      "period": "Setembro 2014 - Junho 2015.",
+      "description": "Fui parte do time de desenvolvimento de sistemas internos trabalhando em conjunto com o ERP da empresa (CONSINCO). Participei na criação de um sistema para conciliação de compras efetuadas com cartão nos terminais POS. Criei dois módulos de consultas de vendas efetuadas na empresa atacadista do grupo, assim como um módulo que suprisse a mesma necessidade das empresas de Cash & Carry. Ajudei na criação de um sistema de inventário - inventários para a parte de logística da empresa. Desenvolvi tambem um sistema de Busca de Preço - app android com api rest em php - consultas de preços e armazenamento na base do ERP."
+    },
+    "adptdata": {
+      "company": "Adapt Data, Brasil",
+      "position": "Full-Stack Engineer",
+      "period": "Novembro 2013 - Maio 2014.",
+      "description": "Desenvolvimento dos sistemas - Bares & Lanches (PDV), Despachantes Manaus (Controle de ordem de serviço) - sendo ambos sistemas internos."
+    }
   }
 }
