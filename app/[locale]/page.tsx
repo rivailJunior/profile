@@ -4,6 +4,7 @@ import {
   CardContainer,
   FixedTranslateButton,
   StackExperience,
+  Timeline,
 } from "../../src/components";
 
 export default function Profile() {
@@ -12,6 +13,7 @@ export default function Profile() {
       <div className="profile-page container mx-auto px-4">
         <CardContainer />
         <StackExperience />
+        <Timeline />
         <FixedTranslateButton />
       </div>
       <Footer />
