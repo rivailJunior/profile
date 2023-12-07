@@ -14,5 +14,49 @@
   "footer": {
     "keep_in_touch": "Let's keep in touch",
     "social_midia_call_to_action": "my social profiles"
+  },
+  "experience": {
+    "addi": {
+      "company": "Addi, Latin America",
+      "position": "SR Front-End Engineer",
+      "period": "May 2022 - November 2023",
+      "description": "At Addi I have the opportunity to work with a multi-platform team, working with React js for our web platform and React-Native for our mobile platform (B2C). On Addi, I'm working with a Payment Platform, called B.N.P.L (Buy Now Pay Later) and it's actually running in Colombia and Brazil. It is my first experience working with a company based in another country, using English as the main language to communicate with the team. At Addi, I can work even with the web platform and the mobile platform gathering the whole React stack to deliver to the user the best experience possible."
+    },
+    "olist": {
+      "company": "Olist, Brazil",
+      "position": "SR Front-End Engineer",
+      "period": "From Jun 2021 - May 2022",
+      "description": "Olist is a platform (B2B) that helps sellers to sell their products on Mercado Livre and other Markets Places such as Americanas. Olist is a big store inside these market-places and has a huge platform to help the sellers join (and sell products) with a more evaluated profile. On Olist I worked on the Growth team implementing some functionalities to improve the user experience. Our goal was to create a simple and usable platform to let the non-technical user have a good understanding of what is Olist and what Olist does."
+    },
+    "tarkuss": {
+      "company": "Tarkus, Brazil",
+      "position": "SR Front-End Engineer and Tech Lead",
+      "period": "May 2019 - May 2021",
+      "description": "Tarkus gave me the opportunity to work as a tech leader, it was my first big opportunity to work as a tech lead. At Tarkus, I had the possibility to hire people, create teams, develop new projects, and choose the stacks to be used for our tech team. At this company, I worked on implementing the Cashback app and all the APIs to communicate with this platform (web and mobile). With a B2B and B2C platform, our main objective was to give the customers a great experience in shopping in a retail store giving some advice (based on their shopping list history) and returning cash at the end of this experience (cashback)."
+    },
+    "itriad": {
+      "company": "Itriad Institute, Brazil",
+      "position": "SR Front-End Engineer",
+      "period": "Oct 2016 - Apr 2019",
+      "description": "Working close to Kaios global team. This was the first time I'd worked with a foreign team using English as one of the languages to communicate (part of the team was based in China). Kaios is an operational system built for smart feature phones. In Itriad I had the opportunity to use React in a large-scale project for the first time. I helped my teams to create Two Maps apps (POI-based), an activity recorder app, a play music app, and a To-Do List app. At this company, I had my first experience with leading a team (small team)."
+    },
+    "axm": {
+      "company": "AXM Institute, Brazil",
+      "position": "Full-Stack Engineer",
+      "period": "October 2015 -  September 2016.",
+      "description": "Development of the payment system - gateway, reconciliation, and Back-Office - as well as the implementation of the API for notification of transactions made via POS for clients with their own Platform. Development of an API to help the Web Client in the POS requests, CMS for Whirlpool inventory control, and sales reconciliation API and client app. "
+    },
+    "novaera": {
+      "company": "Mercantil Nova Era, Brazil",
+      "position": "Full-Stack Engineer",
+      "period": "September 2014 - June 2015.",
+      "description": "Development of internal systems by working together with the company's ERP team. Participation in the creation of a system for reconciling purchases made with cards on POS terminals. Creation of two modules for querying sales made in the wholesale company and a module that serves the same need for Cash & Carry companies. Inventory system - inventories for the logistics part of the company. Price Search System, an Android app with PHP REST API."
+    },
+    "adptdata": {
+      "company": "Adapt Data, Brazil",
+      "position": "Full-Stack Engineer",
+      "period": "November 2013 - May 2014.",
+      "description": "Participation in the development of systems - Pubs & Restaurants (PDV), Despachantes Manaus (Service order control) - both internal systems."
+    }
   }
 }
