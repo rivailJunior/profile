@@ -7,9 +7,9 @@
   "card_skills": "skills",
   "card_years": "years",
   "about_me": {
-    "description_1": "With a decade of experience, mostly dedicated to JavaScript development for web and mobile platforms, I have a background that allows me to work on projects ranging from Map applications (POI) to E-Commerce platforms.",
-    "description_2": "Throughout my journey, I have had the opportunity to work with smaller, leaner teams, but currently, I work with large teams spread across Latin America. Today, I work as a Senior Front-End Engineer at Addi, developing a high-demand platform that caters to a large number of users.",
-    "description_3": "I believe in the importance of providing high-performance and reliable solutions to meet users' real-time needs. My experience has prepared me to tackle challenges related to scalability, optimization, and agile delivery, ensuring that applications are developed and enhanced with maximum efficiency."
+    "description_1": "Engineer Full-Stack with 10 years of experience and a passion for web technologies, specializing in Node, React, and React-Native. Currently seeking professional challenges that allow me to apply my solid knowledge, contributing to the team's success and aligning with the company's strategic goals.",
+    "description_2": "Throughout my journey, I have worked with both lean, smaller teams and large teams spread across Latin America. I currently work as a Front-End engineer, and in my most recent position, I collaborated with Addi, an e-commerce platform serving a large number of users. I was part of the mobile and web team, using React-Native to develop applications for Android and iOS, and React.js for the web platform.",
+    "description_3": "I believe in the importance of providing high-performance and reliable solutions to meet users' real-time needs. My experience has prepared me to handle challenges related to scalability, optimization, and agile delivery, ensuring that applications are developed and enhanced with maximum efficiency."
   },
   "footer": {
     "keep_in_touch": "Let's keep in touch",
@@ -58,5 +58,9 @@
       "period": "November 2013 - May 2014.",
       "description": "Participation in the development of systems - Pubs & Restaurants (PDV), Despachantes Manaus (Service order control) - both internal systems."
     }
+  },
+  "home": {
+    "experience": "job experience",
+    "skills": "tech skills"
   }
 }

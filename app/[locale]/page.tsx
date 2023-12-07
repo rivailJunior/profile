@@ -5,6 +5,8 @@ import {
   FixedTranslateButton,
   StackExperience,
   Timeline,
+  DividerSkills,
+  DividerJobs,
 } from "../../src/components";
 
 export default function Profile() {
@@ -12,7 +14,9 @@ export default function Profile() {
     <div className="bg-gray-700 ">
       <div className="profile-page container mx-auto px-4">
         <CardContainer />
+        <DividerSkills />
         <StackExperience />
+        <DividerJobs />
         <Timeline />
         <FixedTranslateButton />
       </div>

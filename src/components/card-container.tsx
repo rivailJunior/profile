@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 "use client";
 import Image from "next/image";
-import { BiMap, BiBriefcase } from "react-icons/bi";
+import { BiBriefcase } from "react-icons/bi";
 import { MdOutlineSchool } from "react-icons/md";
 import { PersonalImg } from "../assets/images";
 import { useTranslations } from "next-intl";
@@ -12,7 +12,7 @@ export default function CardContainer() {
 
   return (
     <div className="relative pt-36">
-      <div className="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
+      <div className="relative  flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
         <div className="container">
           <div className="flex h-10 w-full justify-center">
             <div className="relative">
@@ -26,34 +26,29 @@ export default function CardContainer() {
             </div>
           </div>
           <div className="mt-5 pt-20 text-center">
-            <h3 className="mb-0 bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-4xl font-semibold leading-normal text-transparent">
+            <h3 className="mb-1 text-3xl font-semibold leading-normal text-blue-500">
               Rivail Pinto
             </h3>
-            <div className="mb-5 text-center text-sm font-semibold leading-normal text-gray-500 max-sm:px-10">
+            <div className="mb-2 text-center text-sm font-normal leading-normal text-gray-500 max-sm:px-10">
               {t("card_experience")}
             </div>
-            <div className="mb-1 mt-0 text-sm font-bold capitalize leading-normal text-gray-500">
-              <div className="mb-2 flex flex-row justify-center">
-                <BiMap size={20} />
-                <span className="ml-2">Manaus, AM - Brasil</span>
-              </div>
-            </div>
-            <div className="mb-2 mt-5 text-sm font-bold capitalize leading-normal text-gray-500">
-              <div className="mb-2 flex flex-row justify-center">
-                <BiBriefcase
-                  size={20}
-                  className="fas fa-briefcase mr-2 text-lg text-gray-500"
-                />
-                <span className="ml-2">{t("card_job_title")}</span>
-              </div>
-            </div>
-            <div className="mb-2 mt-5 text-sm font-bold capitalize leading-normal text-gray-500">
-              <div className="mb-2 flex flex-row justify-center">
-                <MdOutlineSchool
-                  size={20}
-                  className="fas fa-university mr-2 text-lg text-gray-500"
-                />
-                <span className="ml-2">{t("card_degree_title")}</span>
+
+            <div className="text-sm font-normal capitalize leading-normal text-gray-500">
+              <div className="mb-2 flex flex-row justify-center space-x-2">
+                <>
+                  <MdOutlineSchool
+                    size={20}
+                    className="fas fa-university  text-lg text-gray-500"
+                  />
+                  <span className="ml-2">{t("card_degree_title")}</span>
+                </>
+                <>
+                  <BiBriefcase
+                    size={20}
+                    className="fas fa-briefcase text-lg text-gray-500"
+                  />
+                  <span className="ml-2">{t("card_job_title")}</span>
+                </>
               </div>
             </div>
           </div>
