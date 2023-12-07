@@ -12,7 +12,7 @@ export default function CardContainer() {
 
   return (
     <div className="relative pt-36">
-      <div className="relative  flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
+      <div className="relative flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-xl">
         <div className="container">
           <div className="flex h-10 w-full justify-center">
             <div className="relative">
@@ -54,7 +54,7 @@ export default function CardContainer() {
           </div>
           <div className="mt-10 border-t border-gray-300 px-10 py-10 text-center">
             <div className="flex flex-wrap justify-center">
-              <div className="w-full px-4 lg:w-9/12">
+              <div className="w-full lg:w-9/12">
                 <p className="mb-2 text-justify text-lg leading-relaxed text-gray-600">
                   {aboutMeTranslations("description_1")}
                 </p>
