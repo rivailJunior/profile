@@ -3,8 +3,8 @@ import "../../src/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import React from "react";
-import { IPageProps } from "../../src/interfaces/pages";
-import { Metadata } from "next";
+import { type IPageProps } from "../../src/interfaces/pages";
+import { type Metadata } from "next";
 
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "pt" }];

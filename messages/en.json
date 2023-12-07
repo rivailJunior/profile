@@ -4,6 +4,8 @@
   "card_current_job": "Current",
   "card_job_title": "Sr Front-End",
   "card_degree_title": "Computer Science",
+  "card_skills": "skills",
+  "card_years": "years",
   "about_me": {
     "description_1": "With a decade of experience, mostly dedicated to JavaScript development for web and mobile platforms, I have a background that allows me to work on projects ranging from Map applications (POI) to E-Commerce platforms.",
     "description_2": "Throughout my journey, I have had the opportunity to work with smaller, leaner teams, but currently, I work with large teams spread across Latin America. Today, I work as a Senior Front-End Engineer at Addi, developing a high-demand platform that caters to a large number of users.",

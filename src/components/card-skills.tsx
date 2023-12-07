@@ -1,72 +1,8 @@
+"use client";
 import React from "react";
-
-type TSkills = {
-  name: string;
-  value: number;
-};
-
-const skills: TSkills[] = [
-  {
-    name: "javascript",
-    value: 9,
-  },
-  {
-    name: "typescript",
-    value: 8,
-  },
-  {
-    name: "react js",
-    value: 9,
-  },
-  {
-    name: "html",
-    value: 10,
-  },
-  {
-    name: "css",
-    value: 7,
-  },
-  {
-    name: "jsx",
-    value: 8,
-  },
-  {
-    name: "react-native",
-    value: 8,
-  },
-  {
-    name: "expo",
-    value: 8,
-  },
-  {
-    name: "nodejs",
-    value: 7,
-  },
-  {
-    name: "express js",
-    value: 7,
-  },
-  {
-    name: "nestjs",
-    value: 7,
-  },
-  {
-    name: "aws",
-    value: 5,
-  },
-  {
-    name: "git",
-    value: 9,
-  },
-  {
-    name: "agile",
-    value: 7,
-  },
-  {
-    name: "figma",
-    value: 7,
-  },
-];
+import { StacksExperienceData, type TSkills } from "../mock/stack-data";
+import { useTranslations } from "next-intl";
+const skills = StacksExperienceData;
 
 const SkillItem = ({ name, value }: TSkills) => {
   const stylePercentage = `${value * 10}%`;
@@ -95,23 +31,18 @@ const SkillItem = ({ name, value }: TSkills) => {
 };
 
 export default function CardSkills() {
+  const t = useTranslations();
   return (
-    <div className="container mx-auto px-4 shadow-xl">
-      <div className="rounded-lg bg-white p-10 ">
-        <h5 className="pb-5 font-semibold leading-normal text-gray-500">
-          Skills
-        </h5>
-        <div className="gap-5 sm:grid sm:grid-cols-2">
-          {skills.map((skill) => {
-            return (
-              <SkillItem
-                key={skill.name}
-                name={skill.name}
-                value={skill.value}
-              />
-            );
-          })}
-        </div>
+    <div className="rounded-lg bg-white p-10 ">
+      <h5 className="pb-5 font-semibold leading-normal text-gray-500">
+        {t("card_skills")}
+      </h5>
+      <div className="gap-5 sm:grid sm:grid-cols-2">
+        {skills.map((skill) => {
+          return (
+            <SkillItem key={skill.name} name={skill.name} value={skill.value} />
+          );
+        })}
       </div>
     </div>
   );

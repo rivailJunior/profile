@@ -5,3 +5,5 @@ export { default as CardContainer } from "./card-container";
 export { default as FixedTranslateButton } from "./fixed-translate-btn";
 // export { default as FadeInComponent } from "./fadeInComponent";
 // export { default as DescriptionCard } from "./description-card";
+
+export { default as StackExperience } from "./stack-experience";
