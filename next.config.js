@@ -5,6 +5,9 @@
  */
 // !process.env.SKIP_ENV_VALIDATION && (await import("./src/env/server.mjs"));
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withNextIntl = require("next-intl/plugin")();
+
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
@@ -14,11 +17,18 @@ const config = {
   //   locales: ["en", "pt"],
   //   defaultLocale: "pt",
   // },
-  experimental: {
-    appDir: true,
-  },
+  // experimental: {
+  //   appDir: true,
+  // },
   // images: {
   //   deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   // },
 };
-export default config;
+
+module.exports = withNextIntl({
+  ...config,
+});
+
+// export default withNextIntl(config);
+
+// export default withNextIntl({ ...config });
