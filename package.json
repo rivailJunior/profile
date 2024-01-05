@@ -50,8 +50,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "volta": {
-    "node": "16.20.0"
   }
 }
