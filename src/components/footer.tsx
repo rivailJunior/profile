@@ -17,6 +17,7 @@ export default function Footer() {
         </div>
         <div className="mt-2 flex flex-row items-center justify-between  align-middle">
           <button
+            aria-label="Twitter"
             className="m-1 h-10 w-10 rounded-full bg-blue-400 p-3 font-normal text-white shadow-lg hover:bg-blue-300"
             type="button"
             onClick={() =>
@@ -26,6 +27,7 @@ export default function Footer() {
             <FaTwitter />
           </button>
           <button
+            aria-label="Instagram"
             className="m-1 h-10 w-10 rounded-full bg-pink-600 p-3 font-normal text-white shadow-lg hover:bg-pink-500"
             type="button"
             onClick={() =>
@@ -35,6 +37,7 @@ export default function Footer() {
             <FaInstagram />
           </button>
           <button
+            aria-label="Linkedin"
             className="m-1 h-10 w-10 rounded-full bg-blue-600 p-3 font-normal text-white shadow-lg hover:bg-blue-500"
             type="button"
             onClick={() =>
@@ -47,6 +50,7 @@ export default function Footer() {
           </button>
 
           <button
+            aria-label="Github"
             className="m-1 h-10 w-10  rounded-full bg-gray-800 p-3 font-normal text-white shadow-lg outline-none hover:bg-gray-700 focus:outline-none"
             type="button"
             onClick={() => handleClickSocial("https://github.com/rivailJunior")}

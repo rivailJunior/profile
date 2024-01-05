@@ -25,15 +25,15 @@ const TimeLineItem = ({ item }: { item: IExperience }) => {
       </span>
 
       <time className="mb-2 block text-sm font-normal leading-none text-blue-500">
-        {item.company} <span className="text-gray-400">• {item.position}</span>
+        {item.company} <span className="text-gray-500">• {item.position}</span>
       </time>
-      <p className="mb-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+      <p className="mb-1 text-sm font-normal text-gray-500 dark:text-gray-500">
         {item.period}
       </p>
       <p className="mb-1 pr-2 text-justify text-base font-normal text-gray-500 dark:text-gray-600">
         {item.description}
       </p>
-      <p className="mb-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+      <p className="dark:text-gray-450 mb-1 text-sm font-normal text-gray-500">
         {item.skills?.join(", ")}
       </p>
     </li>

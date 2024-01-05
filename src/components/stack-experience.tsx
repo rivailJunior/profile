@@ -8,13 +8,18 @@ export default function StackExperience() {
   const t = useTranslations();
   return (
     <div className="flow-root">
-      <ul role="listbox" className="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <ul
+        aria-label="experience panel"
+        role="listbox"
+        className="grid grid-cols-2 gap-4 md:grid-cols-4"
+      >
         {StacksExperienceData.map((item, index) => {
           const Icon = item.icon;
           return (
             <li
               className="white h-auto w-auto rounded-lg bg-white p-5"
               key={index}
+              role="option"
             >
               <div className="flex items-center ">
                 <div className="flex-shrink-0">
@@ -24,7 +29,7 @@ export default function StackExperience() {
                   <div className="truncate text-sm font-medium capitalize text-gray-700">
                     {item.name}
                   </div>
-                  <p className="truncate text-sm text-gray-500 dark:text-gray-400">
+                  <p className="truncate text-sm text-gray-500">
                     {item.years + " " + t("card_years")}
                   </p>
                 </div>
