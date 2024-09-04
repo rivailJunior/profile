@@ -3,19 +3,23 @@ import {
   Footer,
   CardContainer,
   FixedTranslateButton,
-  StackExperience,
   Timeline,
   DividerSkills,
   DividerJobs,
+  CardContainerV2,
+  DividerAboutMe,
+  SkillsSlider,
 } from "../../src/components";
 
 export default function Profile() {
   return (
-    <div className="bg-gray-700 ">
-      <div className="profile-page container mx-auto px-4">
+    <div className="bg-gray-800 ">
+      <div className="profile-page container mx-auto px-32 py-24">
+        <CardContainerV2 />
+        <DividerAboutMe />
         <CardContainer />
         <DividerSkills />
-        <StackExperience />
+        <SkillsSlider />
         <DividerJobs />
         <Timeline />
         <FixedTranslateButton />
