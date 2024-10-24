@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { PersonalImg } from "../assets/images";
 import FadeInComponent from "./fadeInComponent";
 import { Transition } from "@headlessui/react";
 import { MdOutlineSchool } from "react-icons/md";
@@ -54,7 +53,7 @@ export default function DescriptionCard() {
             className="relative h-60 w-full md:h-40 md:w-2/12 xl:h-72"
           >
             <Image
-              src={PersonalImg}
+              src="/personal.jpg"
               alt="Rivail Santos"
               objectFit="cover"
               fill

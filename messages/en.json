@@ -6,6 +6,11 @@
   "card_degree_title": "Computer Science",
   "card_skills": "skills",
   "card_years": "years",
+  "card_location": "Brazil",
+  "card_introduce": "Hi! My name is",
+  "card_introduce2": "I'm a Software Engineer focused on web development.",
+  "card_short_description": "I have been working as a React developer for over 8 years and I have a passion for creating beautiful and intuitive user interfaces.",
+  "card_short_description2": "Also, I have a great experience working with",
   "about_me": {
     "description_1": "Engineer Full-Stack with 10 years of experience and a passion for web technologies, specializing in Node, React, and React-Native. Currently seeking professional challenges that allow me to apply my solid knowledge, contributing to the team's success and aligning with the company's strategic goals.",
     "description_2": "Throughout my journey, I have worked with both lean, smaller teams and large teams spread across Latin America. I currently work as a Front-End engineer, and in my most recent position, I collaborated with Addi, an e-commerce platform serving a large number of users. I was part of the mobile and web team, using React-Native to develop applications for Android and iOS, and React.js for the web platform.",
@@ -61,6 +66,7 @@
   },
   "home": {
     "experience": "job experience",
-    "skills": "tech skills"
+    "skills": "tech skills",
+    "about_me": "about me"
   }
 }

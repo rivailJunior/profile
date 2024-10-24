@@ -6,6 +6,11 @@
   "card_degree_title": "Ciência da Computação",
   "card_skills": "Conhecimento técnico",
   "card_years": "anos",
+  "card_location": "Brasil",
+  "card_introduce": "Olá! Eu sou",
+  "card_introduce2": "Sou desenvolvedor Full-Stack focado no desenvolvimento web.",
+  "card_short_description": "Venho trabalhando com React.js ao longo dos ultimos 8 anos e tendo uma paixao por criar interfaces amigáveis e intuitivas.",
+  "card_short_description2": "Possuo tambem uma vasta experiencia com",
   "about_me": {
     "description_1": "Engenheiro Full-Stack com 10 anos de experiência e apaixonado por tecnologias web, especializado em Node, React e React-Native. Atualmente em busca de desafios profissionais que permitam aplicar meu conhecimento sólido, contribuindo para o sucesso da equipe e alinhando-me às metas estratégicas da empresa.",
     "description_2": "Ao longo da jornada trabalhei desde equipes mais enxutas e menores até a grandes equipes espalhadas pela América Latina. Hoje atuo como engenheiro Front-End e na minha mais recente posição trabalhei com Addi, uma plataforma de e-commerce que atende a um grande número de usuários. Fiz parte do time de mobile e web, usando React-Native para desenvolver aplicativos para Android e iOS e React.js para a plataforma web.",
@@ -61,6 +66,7 @@
   },
   "home": {
     "experience": "Experiencias de trabalho",
-    "skills": "Habilidades técnicas"
+    "skills": "Habilidades técnicas",
+    "about_me": "sobre mim"
   }
 }
