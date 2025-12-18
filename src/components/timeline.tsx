@@ -4,15 +4,12 @@ import React from "react";
 import type { IExperience } from "../interfaces/experiences";
 import { useTranslations } from "next-intl";
 import { JobExperienceSkillsData } from "../mock/stack-data";
+import { Accordion } from "./accordion";
 
-type ITimeline = {
-  data: IExperience[];
-};
-
-const TimeLineItem = ({ item }: { item: IExperience }) => {
+const Title = (item: IExperience) => {
   return (
-    <li className="ms-4 p-5">
-      <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-500 dark:ring-gray-200">
+    <div className="flex flex-row gap-6">
+      <div className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-500 dark:ring-gray-200">
         <svg
           className="h-2.5 w-2.5 text-blue-500"
           aria-hidden="true"
@@ -22,33 +19,32 @@ const TimeLineItem = ({ item }: { item: IExperience }) => {
         >
           <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
         </svg>
-      </span>
-
-      <time className="mb-2 block text-sm font-normal leading-none text-blue-500">
-        {item.company} <span className="text-gray-500">• {item.position}</span>
-      </time>
-      <p className="mb-1 text-sm font-normal text-gray-500 dark:text-gray-500">
-        {item.period}
-      </p>
-      <p className="mb-1 pr-2 text-justify text-base font-normal text-gray-500 dark:text-gray-600">
-        {item.description}
-      </p>
-      <p className="dark:text-gray-450 mb-1 text-sm font-normal text-gray-500">
-        {item.skills?.join(", ")}
-      </p>
-    </li>
+      </div>
+      <div className="flex-start flex flex-col items-start">
+        <div className="flex flex-row justify-between">
+          <time className="mb-2 block text-sm font-normal leading-none text-white">
+            {item.company}{" "}
+            <span className="text-white/70">• {item.position}</span>
+          </time>
+        </div>
+        <div className="text-sm font-normal text-white/70">{item.period}</div>
+      </div>
+    </div>
   );
 };
 
-function Line({ data }: ITimeline) {
+const Content = (item: IExperience) => {
   return (
-    <ol className="relative rounded-lg border-gray-200 bg-white">
-      {data?.map((item) => {
-        return <TimeLineItem item={item} key={item.company} />;
-      })}
-    </ol>
+    <>
+      <p className="mb-1 pr-2 text-justify text-base font-normal text-gray-500 dark:text-white">
+        {item.description}
+      </p>
+      <p className="mb-1 text-sm font-normal dark:text-white/80">
+        {item.skills?.join(", ")}
+      </p>
+    </>
   );
-}
+};
 
 export default function TimeLine() {
   const t = useTranslations("experience");
@@ -103,5 +99,11 @@ export default function TimeLine() {
       skills: JobExperienceSkillsData[6]?.skills,
     },
   ];
-  return <Line data={data} />;
+  const accordionItems = data.map((item) => {
+    return {
+      title: Title(item),
+      content: Content(item),
+    };
+  });
+  return <Accordion data={accordionItems} />;
 }

@@ -7,7 +7,6 @@ import {
   GithubIcon,
   HtmlIcon,
   JavascriptIcon,
-  JsxIcon,
   NestjsIcon,
   NodejsIcon,
   PhpIcon,
@@ -52,12 +51,6 @@ const StacksExperienceData: TSkills[] = [
     value: 7,
     years: 9,
     icon: CssIcon,
-  },
-  {
-    name: "jsx",
-    value: 8,
-    years: 7,
-    icon: JsxIcon,
   },
   {
     name: "react-native",
