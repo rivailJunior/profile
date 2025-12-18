@@ -28,7 +28,8 @@
     "**/*.cjs",
     "**/*.mjs",
     ".next/types/**/*.ts",
-    "next.config.js"
+    "next.config.js",
+    "tailwind.config.cjs"
   ],
   "exclude": ["node_modules"]
 }
