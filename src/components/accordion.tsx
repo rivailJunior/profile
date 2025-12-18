@@ -30,11 +30,11 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
     <div id="accordion-collapse" className="flex flex-col gap-2">
       {data?.map((item, index) => {
         return (
-          <div key={index.toString()}>
+          <div key={index.toString()} className="flex flex-col rounded-lg ">
             <h2 id={`accordion-collapse-heading-` + index}>
               <button
                 type="button"
-                className={`flex h-auto w-full items-center justify-between gap-3 rounded-xl border border-b-0 border-gray-200 p-5 font-medium text-white dark:border-gray-700 dark:hover:bg-white/10 dark:focus:bg-white/20 ${
+                className={`flex h-auto w-full items-center justify-between gap-3 rounded-lg border border-gray-700 p-5 font-medium text-white dark:hover:bg-white/5 dark:focus:bg-white/5 ${
                   openIndex === index ? "bg-white/20" : ""
                 }`}
                 onClick={() => toggleAccordion(index)}
@@ -64,7 +64,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
             </h2>
             <div
               id={"accordion-collapse-body-" + index}
-              className="flex overflow-hidden rounded-lg transition-all duration-300"
+              className="flex overflow-hidden transition-all duration-300"
               style={{
                 maxHeight:
                   openIndex === index ? `${heights[index] || 0}px` : "0px",
@@ -75,7 +75,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
               aria-labelledby={"accordion-collapse-heading-" + index}
               ref={(el) => (contentRefs.current[index] = el)}
             >
-              <div className="rounded-sm border-2 border-white/10 p-5 text-white">
+              <div className="w-full rounded-lg border border-white/10 p-5 text-white">
                 {item.content}
               </div>
             </div>

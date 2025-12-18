@@ -5,20 +5,13 @@ import type { IExperience } from "../interfaces/experiences";
 import { useTranslations } from "next-intl";
 import { JobExperienceSkillsData } from "../mock/stack-data";
 import { Accordion } from "./accordion";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 const Title = (item: IExperience) => {
   return (
-    <div className="flex flex-row gap-6">
-      <div className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-500 dark:ring-gray-200">
-        <svg
-          className="h-2.5 w-2.5 text-blue-500"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="white"
-          viewBox="0 0 20 20"
-        >
-          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-        </svg>
+    <div className="flex flex-row items-center gap-6">
+      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-500 ring-8 ring-blue-400 ">
+        <BsPersonWorkspace />
       </div>
       <div className="flex-start flex flex-col items-start">
         <div className="flex flex-row justify-between">
@@ -39,7 +32,7 @@ const Content = (item: IExperience) => {
       <p className="mb-1 pr-2 text-justify text-base font-normal text-gray-500 dark:text-white">
         {item.description}
       </p>
-      <p className="mb-1 text-sm font-normal dark:text-white/80">
+      <p className="pb-4 text-sm font-normal dark:text-white/80">
         {item.skills?.join(", ")}
       </p>
     </>
