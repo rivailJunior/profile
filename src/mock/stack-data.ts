@@ -12,6 +12,9 @@ import {
   PhpIcon,
   ReactjsIcon,
   TypescriptIcon,
+  JiraIcon,
+  JestIcon,
+  CypressIcon,
 } from "../assets/icons";
 
 interface TSkills {
@@ -100,12 +103,29 @@ const StacksExperienceData: TSkills[] = [
     years: 9,
     icon: GithubIcon,
   },
-
   {
     name: "figma",
     value: 7,
     years: 5,
     icon: FigmaIcon,
+  },
+  {
+    name: "jira",
+    value: 7,
+    years: 4,
+    icon: JiraIcon,
+  },
+  {
+    name: "jest",
+    value: 8,
+    years: 6,
+    icon: JestIcon,
+  },
+  {
+    name: "cypress",
+    value: 8,
+    years: 3,
+    icon: CypressIcon,
   },
 ];
 

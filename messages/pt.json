@@ -7,25 +7,32 @@
   "card_skills": "Conhecimento técnico",
   "card_years": "anos",
   "card_location": "Brasil",
-  "card_introduce": "Olá! Eu sou",
-  "card_introduce2": "Sou desenvolvedor Full-Stack focado no desenvolvimento web.",
-  "card_short_description": "Venho trabalhando com React.js ao longo dos ultimos 8 anos e tendo uma paixao por criar interfaces amigáveis e intuitivas.",
-  "card_short_description2": "Possuo tambem uma vasta experiencia com",
+  "card_introduce": "Olá, eu sou",
+  "card_introduce2": "um Engenheiro de Software que curte transformar problemas complexos em soluções web elegantes e escaláveis.",
+  "card_short_description": "Atuo como Engenheiro de Software há mais de 12 anos, sendo os últimos 8 anos focados no desenvolvimento de aplicações web com React.",
+  "card_short_description2": "Sou especializado na criação de interfaces intuitivas e escaláveis, com forte experiência em: ",
+  "card_short_skills": "Javascript, Typescript, NodeJs, React, React-Native e AWS.",
   "about_me": {
-    "description_1": "Engenheiro Full-Stack com 10 anos de experiência e apaixonado por tecnologias web, especializado em Node, React e React-Native. Atualmente em busca de desafios profissionais que permitam aplicar meu conhecimento sólido, contribuindo para o sucesso da equipe e alinhando-me às metas estratégicas da empresa.",
-    "description_2": "Ao longo da jornada trabalhei desde equipes mais enxutas e menores até a grandes equipes espalhadas pela América Latina. Hoje atuo como engenheiro Front-End e na minha mais recente posição trabalhei com Addi, uma plataforma de e-commerce que atende a um grande número de usuários. Fiz parte do time de mobile e web, usando React-Native para desenvolver aplicativos para Android e iOS e React.js para a plataforma web.",
-    "description_3": "Acredito na importância de oferecer soluções de alto desempenho e confiabilidade para atender às necessidades dos usuários em tempo real. Minha experiência me preparou para lidar com desafios relacionados à escalabilidade, otimização e entrega ágil, garantindo que os aplicativos sejam desenvolvidos e aprimorados com a máxima eficiência."
+    "description_1": "Engenheiro Full Stack com mais de 12 anos de experiência na construção e evolução de produtos digitais em diferentes contextos. Sou motivado por desafios complexos e focado em entregar soluções que gerem valor real para usuários e negócios.",
+    "description_2": "Ao longo da minha trajetória, atuei tanto em times enxutos quanto em organizações grandes e distribuídas. Atualmente, trabalho no setor de e-commerce, contribuindo para plataformas de alto tráfego e colaborando entre times web e mobile para entregar experiências consistentes e de alta qualidade aos usuários.",
+    "description_3": "Acredito fortemente na construção de soluções performáticas, confiáveis e escaláveis, capazes de atender às necessidades dos usuários em tempo real. Minha experiência me preparou para lidar com desafios relacionados a crescimento, otimização e entrega contínua, sempre com foco em eficiência, qualidade e sustentabilidade de longo prazo."
   },
   "footer": {
     "keep_in_touch": "Vamos manter contato",
     "social_midia_call_to_action": "Minhas redes sociais"
   },
   "experience": {
+    "trafilea": {
+      "company": "Trafilea, America Latina",
+      "position": "Engenheiro Front-End Sr",
+      "period": "Fev 2024 - Atual",
+      "description": "Na Trafilea Tech E-commerce Group, colaboro com o time de Produtos no desenvolvimento de funcionalidades orientadas a vendas utilizando React, Next.js e Aws. Arquiteto e entrego novas features semanalmente, com foco em escalabilidade, performance e experiência do cliente."
+    },
     "addi": {
       "company": "Addi, America Latina",
       "position": "Engenheiro Front-End Sr",
       "period": "Maio 2022 - Novembro 2023",
-      "description": "Fiz parte dos time de Services e posteriormente de Shop. Reescrevi a solução de pagamento para no mercado Brasileiro - com pix parcelado - e para o mercado no colombiano. Reimplementando a plataforma desde a funcionalidade de contas a pagar (na home page do app) até o checkout de pagamentos com bancos parceiros. Na Addi fui desde desenvolvimento de atividades voltadas para pagamento, lead de novos lojistas e também participava ativamente do processo de levantamento de requisitos para novos produtos e modelagem da solução."
+      "description": "Na Addi, contribuí para uma plataforma de pagamentos BNPL (Buy Now, Pay Later) que opera na Colômbia e no Brasil. Atuei tanto no desenvolvimento web quanto mobile, utilizando React, Next.js, React Native e Aws, em colaboração com uma equipe internacional em um ambiente de comunicação em inglês. Esse papel me permitiu explorar todo o ecossistema React para entregar experiências escaláveis, consistentes e de alta qualidade aos usuários."
     },
     "olist": {
       "company": "Olist, Brasil",
@@ -37,7 +44,7 @@
       "company": "Tarkus, Brasil",
       "position": "Líder técnico e EngenheiroFront-End Sr",
       "period": "Maio 2019 - Maio 2021",
-      "description": "Na Tarkuss fiz parte do time de gestão dos projetos, planejando o desenvolvimento, ornaizando as demandas e distribuindo as tarefas. Fui o responsável por criar a estrutura do time (frontend e backend), selecionando as stack necessárias e a arquitetura a ser usada. Ajudei tambem a montar as equipes, realizando as entrevistas iniciais e técnicas. Meu maior desafio foi liderar o time para a plataforma de CashBack -  www.zeussapp.com.br - de um grande lojista parceiro. O Zeuss é CRM com um adicional de CashBack. Destaco o papel importante na contratação da cloud quanto dos provedores de envio de notificações via sms e e-mail."
+      "description": "Na Tarkus, assumi meu primeiro grande desafio como Tech Lead, liderando a formação e o crescimento de times de engenharia. Fui responsável pela contratação de profissionais, definição do stack tecnológico e liderança no desenvolvimento de novos projetos. Atuei de forma decisiva na arquitetura e entrega de uma plataforma de Cashback, incluindo o desenvolvimento de todas as APIs de suporte para aplicações web e mobile. A solução atendia tanto usuários B2B quanto B2C, com foco em aprimorar a experiência de compra em lojas físicas por meio de recomendações personalizadas baseadas no histórico de compras e recompensas em cashback."
     },
     "itriad": {
       "company": "Instituto Itriad, Brasil",
