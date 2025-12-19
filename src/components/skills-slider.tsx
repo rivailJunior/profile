@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Take first 6 items from StacksExperienceData for the slider
-const bloxItems = StacksExperienceData.slice(0, 6).map((item, index) => ({
+const bloxItems = StacksExperienceData.map((item, index) => ({
   ...item,
   active: index > 0 && index < 5, // First and last items are inactive to match the design
 }));
@@ -17,33 +17,33 @@ const SliderWorker = Slider as unknown as ComponentType<Settings>;
 
 function SkillsSlider() {
   const settings = {
-    dots: false,
     infinite: true,
-    speed: 3000,
+    speed: 1000,
     slidesToShow: 5,
-    slidesToScroll: 2,
+    slidesToScroll: 5,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true,
     arrows: false,
-    touchMove: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 5,
+          slidesToScroll: 5,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 3,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
@@ -55,7 +55,7 @@ function SkillsSlider() {
         {bloxItems.map((item, index) => (
           <div key={`${item.name}-${index}`} className="px-2 ">
             <div
-              className={`mx-auto flex w-auto items-center justify-center rounded-lg px-4 py-3`}
+              className={`mx-auto flex w-auto items-center justify-center rounded-lg  px-4 py-8 hover:cursor-pointer hover:bg-white/5`}
             >
               <div
                 className={`flex flex-row items-center justify-center gap-4`}

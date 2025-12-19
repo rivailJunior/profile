@@ -7,25 +7,32 @@
   "card_skills": "skills",
   "card_years": "years",
   "card_location": "Brazil",
-  "card_introduce": "Hi! My name is",
-  "card_introduce2": "I'm a Software Engineer focused on web development.",
-  "card_short_description": "I have been working as a React developer for over 8 years and I have a passion for creating beautiful and intuitive user interfaces.",
-  "card_short_description2": "Also, I have a great experience working with",
+  "card_introduce": "Hi, my name is",
+  "card_introduce2": "a Software Engineer who enjoys turning complex problems into clean, scalable web solutions.",
+  "card_short_description": "I’ve been working as a Software Engineer for over 12 years, with the last 8 years focused on building web applications with React.",
+  "card_short_description2": "I specialize in creating intuitive, scalable user interfaces and have strong experience with: ",
+  "card_short_skills": "Javascript, Typescript, NodeJs, React, React-Native and AWS",
   "about_me": {
-    "description_1": "Engineer Full-Stack with 10 years of experience and a passion for web technologies, specializing in Node, React, and React-Native. Currently seeking professional challenges that allow me to apply my solid knowledge, contributing to the team's success and aligning with the company's strategic goals.",
-    "description_2": "Throughout my journey, I have worked with both lean, smaller teams and large teams spread across Latin America. I currently work as a Front-End engineer, and in my most recent position, I collaborated with Addi, an e-commerce platform serving a large number of users. I was part of the mobile and web team, using React-Native to develop applications for Android and iOS, and React.js for the web platform.",
-    "description_3": "I believe in the importance of providing high-performance and reliable solutions to meet users' real-time needs. My experience has prepared me to handle challenges related to scalability, optimization, and agile delivery, ensuring that applications are developed and enhanced with maximum efficiency."
+    "description_1": "Full-Stack Engineer with over 12 years of experience building and evolving digital products in diverse environments. I’m motivated by complex challenges and focused on delivering solutions that generate real value for users and businesses.",
+    "description_2": "TThroughout my career, I’ve worked with both lean teams and large, distributed organizations. Currently, I work in the e-commerce domain, contributing to high-traffic platforms and collaborating across web and mobile teams to deliver consistent and high-quality user experiences.",
+    "description_3": "I strongly believe in building performant, reliable, and scalable solutions that support real-time user needs. My background has prepared me to handle challenges related to growth, optimization, and continuous delivery, always with a focus on efficiency, quality, and long-term sustainability."
   },
   "footer": {
     "keep_in_touch": "Let's keep in touch",
     "social_midia_call_to_action": "my social profiles"
   },
   "experience": {
+    "trafilea": {
+      "company": "Trafilea, America Latina",
+      "position": "Engenheiro Front-End Sr",
+      "period": "Fev 2024 - Current",
+      "description": "At Trafilea Tech E-commerce Group, I collaborate with Product Owners to develop sales-driven features using React and Next.js. I architect and deliver new features on a weekly basis, focusing on scalability, performance, and customer experience."
+    },
     "addi": {
       "company": "Addi, Latin America",
       "position": "SR Front-End Engineer",
       "period": "May 2022 - November 2023",
-      "description": "At Addi I have the opportunity to work with a multi-platform team, working with React js for our web platform and React-Native for our mobile platform (B2C). On Addi, I'm working with a Payment Platform, called B.N.P.L (Buy Now Pay Later) and it's actually running in Colombia and Brazil. It is my first experience working with a company based in another country, using English as the main language to communicate with the team. At Addi, I can work even with the web platform and the mobile platform gathering the whole React stack to deliver to the user the best experience possible."
+      "description": "At Addi, I contributed to a BNPL (Buy Now, Pay Later) payment platform operating in Colombia and Brazil. I worked across web and mobile platforms using React and React Native, collaborating with an international team in an English-speaking environment. This role allowed me to leverage the full React stack to deliver scalable and seamless user experiences."
     },
     "olist": {
       "company": "Olist, Brazil",
@@ -37,7 +44,7 @@
       "company": "Tarkus, Brazil",
       "position": "SR Front-End Engineer and Tech Lead",
       "period": "May 2019 - May 2021",
-      "description": "Tarkus gave me the opportunity to work as a tech leader, it was my first big opportunity to work as a tech lead. At Tarkus, I had the possibility to hire people, create teams, develop new projects, and choose the stacks to be used for our tech team. At this company, I worked on implementing the Cashback app and all the APIs to communicate with this platform (web and mobile). With a B2B and B2C platform, our main objective was to give the customers a great experience in shopping in a retail store giving some advice (based on their shopping list history) and returning cash at the end of this experience (cashback)."
+      "description": "At Tarkus, I stepped into my first major Tech Lead role, where I led the formation and growth of engineering teams. I was responsible for hiring engineers, defining technical stacks, and leading the development of new projects. I played a key role in architecting and delivering a Cashback platform, including the development of all supporting APIs for both web and mobile applications. The solution served B2B and B2C users, with a focus on enhancing the in-store shopping experience through personalized recommendations based on purchase history and cashback rewards."
     },
     "itriad": {
       "company": "Itriad Institute, Brazil",

@@ -10,7 +10,13 @@ import { BsPersonWorkspace } from "react-icons/bs";
 const Title = (item: IExperience) => {
   return (
     <div className="flex flex-row items-center gap-6">
-      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-500 ring-8 ring-blue-400 ">
+      <div
+        className={`flex h-8 w-8 items-center justify-center rounded-full  ${
+          item.status === "current"
+            ? "bg-blue-500 ring-8 ring-blue-400"
+            : "bg-blue-200 ring-8 ring-blue-100"
+        }`}
+      >
         <BsPersonWorkspace />
       </div>
       <div className="flex-start flex flex-col items-start">
@@ -42,6 +48,14 @@ const Content = (item: IExperience) => {
 export default function TimeLine() {
   const t = useTranslations("experience");
   const data: IExperience[] = [
+    {
+      company: t("trafilea.company"),
+      position: t("trafilea.position"),
+      period: t("trafilea.period"),
+      description: t("trafilea.description"),
+      skills: JobExperienceSkillsData[0]?.skills,
+      status: "current",
+    },
     {
       company: t("addi.company"),
       position: t("addi.position"),
