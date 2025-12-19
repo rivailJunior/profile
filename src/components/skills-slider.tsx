@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import type { ComponentType } from "react";
+import type { Settings } from "react-slick";
 import Slider from "react-slick";
 import { StacksExperienceData } from "../mock/stack-data";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +12,8 @@ const bloxItems = StacksExperienceData.slice(0, 6).map((item, index) => ({
   ...item,
   active: index > 0 && index < 5, // First and last items are inactive to match the design
 }));
+
+const SliderWorker = Slider as unknown as ComponentType<Settings>;
 
 function SkillsSlider() {
   const settings = {
@@ -47,7 +51,7 @@ function SkillsSlider() {
 
   return (
     <div className="rounded-b-lg p-4">
-      <Slider {...settings}>
+      <SliderWorker {...settings}>
         {bloxItems.map((item, index) => (
           <div key={`${item.name}-${index}`} className="px-2 ">
             <div
@@ -68,7 +72,7 @@ function SkillsSlider() {
             </div>
           </div>
         ))}
-      </Slider>
+      </SliderWorker>
     </div>
   );
 }
