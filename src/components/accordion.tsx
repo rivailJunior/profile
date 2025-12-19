@@ -73,7 +73,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
                   "max-height 300ms ease-in-out, opacity 300ms ease-in-out",
               }}
               aria-labelledby={"accordion-collapse-heading-" + index}
-              ref={(el) => (contentRefs.current[index] = el)}
+              ref={(el) => (contentRefs.current[index] = el) as any}
             >
               <div className="w-full rounded-lg border border-white/10 p-5 text-white">
                 {item.content}
