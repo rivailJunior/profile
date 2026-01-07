@@ -21,12 +21,14 @@ const Title = (item: IExperience) => {
       </div>
       <div className="flex-start flex flex-col items-start">
         <div className="flex flex-row justify-between">
-          <time className="mb-2 block text-sm font-normal leading-none text-white">
+          <time className="mb-2 block text-sm font-normal leading-none text-brand-black">
             {item.company}{" "}
-            <span className="text-white/70">• {item.position}</span>
+            <span className="text-brand-pink">• {item.position}</span>
           </time>
         </div>
-        <div className="text-sm font-normal text-white/70">{item.period}</div>
+        <div className="text-sm font-normal text-brand-cyan/80">
+          {item.period}
+        </div>
       </div>
     </div>
   );
@@ -35,10 +37,10 @@ const Title = (item: IExperience) => {
 const Content = (item: IExperience) => {
   return (
     <>
-      <p className="mb-1 pr-2 text-justify text-base font-normal text-gray-500 dark:text-white">
+      <p className="mb-1 pr-2 text-justify text-base font-normal text-brand-black/70">
         {item.description}
       </p>
-      <p className="pb-4 text-sm font-normal dark:text-white/80">
+      <p className="pb-4 text-sm font-normal text-brand-black/70">
         {item.skills?.join(", ")}
       </p>
     </>

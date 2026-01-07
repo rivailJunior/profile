@@ -34,17 +34,17 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
             <h2 id={`accordion-collapse-heading-` + index}>
               <button
                 type="button"
-                className={`flex h-auto w-full items-center justify-between gap-3 rounded-lg border border-gray-700 p-5 font-medium text-white dark:hover:bg-white/5 dark:focus:bg-white/5 ${
-                  openIndex === index ? "bg-white/20" : ""
+                className={`flex h-auto w-full items-center justify-between gap-3 rounded-lg border border-gray-200 bg-white p-5 font-medium text-brand-black ${
+                  openIndex === index ? "bg-gray-100" : ""
                 }`}
                 onClick={() => toggleAccordion(index)}
                 aria-expanded={openIndex === index}
                 aria-controls={"accordion-collapse-body-" + index}
               >
-                <span className="text-white">{item.title}</span>
+                <span className="text-brand-black">{item.title}</span>
                 <svg
                   data-accordion-icon
-                  className={`h-3 w-3 shrink-0 text-white transition-transform duration-300 ease-in-out ${
+                  className={`h-3 w-3 shrink-0 text-brand-black transition-transform duration-300 ease-in-out ${
                     openIndex === index ? "rotate-0" : "rotate-180"
                   }`}
                   aria-hidden="true"
@@ -75,7 +75,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
               aria-labelledby={"accordion-collapse-heading-" + index}
               ref={(el) => (contentRefs.current[index] = el) as any}
             >
-              <div className="w-full rounded-lg border border-white/10 p-5 text-white">
+              <div className="w-full rounded-lg border border-gray-200 bg-white p-5 text-brand-black">
                 {item.content}
               </div>
             </div>

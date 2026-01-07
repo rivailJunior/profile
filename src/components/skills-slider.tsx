@@ -55,16 +55,16 @@ function SkillsSlider() {
         {bloxItems.map((item, index) => (
           <div key={`${item.name}-${index}`} className="px-2 ">
             <div
-              className={`mx-auto flex w-auto items-center justify-center rounded-lg  px-4 py-8 hover:cursor-pointer hover:bg-white/5`}
+              className={`mx-auto flex w-auto items-center justify-center rounded-lg px-4 py-8 hover:cursor-pointer hover:bg-brand-black/5`}
             >
               <div
                 className={`flex flex-row items-center justify-center gap-4`}
               >
-                <div className="flex h-8 w-8 items-center justify-center text-white">
+                <div className="flex h-8 w-8 items-center justify-center text-brand-cyan">
                   <item.icon className="text-inherit" size={36} />
                 </div>
                 <span
-                  className={`text-center text-sm font-bold capitalize text-white md:text-lg`}
+                  className={`text-center text-sm font-bold capitalize text-brand-black hover:text-brand-pink md:text-lg`}
                 >
                   {item.name}
                 </span>
