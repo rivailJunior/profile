@@ -7,9 +7,9 @@
   "card_skills": "skills",
   "card_years": "years",
   "card_location": "Brazil",
-  "card_introduce": "Hi, my name is",
-  "card_introduce2": "a Software Engineer who enjoys turning complex problems into clean, scalable web solutions.",
-  "card_short_description": "I’ve been working as a Software Engineer for over 12 years, with the last 8 years focused on building web applications with React.",
+  "card_introduce": "Turning complex problems into",
+  "card_introduce2": "clean, scalable web solutions",
+  "card_short_description": "Specialist in web applications with React, NodeJs and AWS.",
   "card_short_description2": "I specialize in creating intuitive, scalable user interfaces and have strong experience with: ",
   "card_short_skills": "Javascript, Typescript, NodeJs, React, React-Native and AWS",
   "about_me": {

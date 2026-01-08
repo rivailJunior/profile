@@ -13,7 +13,7 @@ import {
 
 export default function Profile() {
   return (
-    <div className="bg-gray-800">
+    <div className="bg-white">
       <div className="mx-auto max-w-xs py-20 sm:max-w-sm md:max-w-7xl md:py-20">
         <CardContainerV2 />
         <DividerAboutMe />

@@ -11,14 +11,14 @@ export default function Footer() {
   };
   return (
     <div className="relative mt-10 pb-5">
-      <div className="container mx-auto flex flex-col items-center justify-center text-white">
-        <div className="mb-2 font-light capitalize text-gray-200">
+      <div className="container mx-auto flex flex-col items-center justify-center text-brand-black">
+        <div className="mb-2 font-light capitalize text-brand-pink">
           {t("social_midia_call_to_action")}
         </div>
         <div className="mt-2 flex flex-row items-center justify-between  align-middle">
           <button
             aria-label="Twitter"
-            className="m-1 h-10 w-10 rounded-full bg-blue-400 p-3 font-normal text-white shadow-lg hover:bg-blue-300"
+            className="m-1 h-10 w-10 rounded-full bg-brand-cyan p-3 font-normal text-brand-black shadow-lg hover:bg-brand-cyan/90"
             type="button"
             onClick={() =>
               handleClickSocial("https://twitter.com/rivaildossantos")
@@ -28,7 +28,7 @@ export default function Footer() {
           </button>
           <button
             aria-label="Instagram"
-            className="m-1 h-10 w-10 rounded-full bg-pink-600 p-3 font-normal text-white shadow-lg hover:bg-pink-500"
+            className="m-1 h-10 w-10 rounded-full bg-brand-pink p-3 font-normal text-brand-black shadow-lg hover:bg-brand-pink/90"
             type="button"
             onClick={() =>
               handleClickSocial("https://www.instagram.com/rivailpinto/")
@@ -38,7 +38,7 @@ export default function Footer() {
           </button>
           <button
             aria-label="Linkedin"
-            className="m-1 h-10 w-10 rounded-full bg-blue-600 p-3 font-normal text-white shadow-lg hover:bg-blue-500"
+            className="m-1 h-10 w-10 rounded-full bg-brand-cyan p-3 font-normal text-brand-black shadow-lg hover:bg-brand-cyan/90"
             type="button"
             onClick={() =>
               handleClickSocial(
@@ -51,7 +51,7 @@ export default function Footer() {
 
           <button
             aria-label="Github"
-            className="m-1 h-10 w-10  rounded-full bg-gray-800 p-3 font-normal text-white shadow-lg outline-none hover:bg-gray-700 focus:outline-none"
+            className="m-1 h-10 w-10  rounded-full bg-brand-black p-3 font-normal text-brand-cyan shadow-lg outline-none hover:bg-brand-black/90 focus:outline-none"
             type="button"
             onClick={() => handleClickSocial("https://github.com/rivailJunior")}
           >
