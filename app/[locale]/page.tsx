@@ -7,23 +7,23 @@ import {
   DividerSkills,
   DividerJobs,
   CardContainerV2,
-  DividerAboutMe,
   SkillsSlider,
+  CenterContainer,
 } from "../../src/components";
 
 export default function Profile() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-xs py-20 sm:max-w-sm md:max-w-7xl md:py-20">
+      <CenterContainer classNames="py-20">
         <CardContainerV2 />
-        <DividerAboutMe />
-        <CardContainer />
-        <DividerSkills />
-        <SkillsSlider />
-        <DividerJobs />
-        <Timeline />
-        <FixedTranslateButton />
-      </div>
+      </CenterContainer>
+      <CardContainer />
+      <DividerSkills />
+      <SkillsSlider />
+      <DividerJobs />
+      <Timeline />
+      <FixedTranslateButton />
+
       <Footer />
     </div>
   );

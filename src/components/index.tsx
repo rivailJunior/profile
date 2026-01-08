@@ -9,6 +9,7 @@ export { default as Timeline } from "./timeline";
 export { default as Divider } from "./divider";
 export { DividerJobs, DividerSkills, DividerAboutMe } from "./divider";
 export { CardContainerV2 } from "./card-containerV2";
+export { CenterContainer } from "./center-container";
 // export { default as HeaderImage } from "./header-image";
 // export { default as FadeInComponent } from "./fadeInComponent";
 // export { default as DescriptionCard } from "./description-card";
