@@ -5,7 +5,7 @@ import { MdLocationPin, MdSchool, MdComputer } from "react-icons/md";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Libre_Baskerville } from "next/font/google";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
