@@ -6,11 +6,11 @@ export default function CardContainer() {
   const aboutMeTranslations = useTranslations("about_me");
 
   return (
-    <div className="relative rounded-md bg-brand-pink p-5 font-thin shadow-lg">
+    <div className="relative bg-brand-pink p-5 font-thin shadow-lg">
       <CenterContainer>
-        <p className="mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-3xl">
+        <div className="mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-3xl">
           {aboutMeTranslations("description_1")}
-        </p>
+        </div>
         <p className="mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-3xl">
           {aboutMeTranslations("description_2")}
         </p>

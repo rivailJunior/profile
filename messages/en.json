@@ -8,14 +8,14 @@
   "card_years": "years",
   "card_location": "Brazil",
   "card_introduce": "Turning complex problems into",
-  "card_introduce2": "clean, scalable web solutions",
+  "card_introduce2": "Clean, scalable web solutions",
   "card_short_description": "Specialist in web applications with React, NodeJs and AWS.",
   "card_short_description2": "I specialize in creating intuitive, scalable user interfaces and have strong experience with: ",
   "card_short_skills": "Javascript, Typescript, NodeJs, React, React-Native and AWS",
   "about_me": {
-    "description_1": "Full-Stack Engineer with over 12 years of experience building and evolving digital products in diverse environments. I’m motivated by complex challenges and focused on delivering solutions that generate real value for users and businesses.",
-    "description_2": "Throughout my career, I’ve worked with both lean teams and large, distributed organizations. Currently, I work in the e-commerce domain, contributing to high-traffic platforms and collaborating across web and mobile teams to deliver consistent and high-quality user experiences.",
-    "description_3": "I strongly believe in building performant, reliable, and scalable solutions that support real-time user needs. My background has prepared me to handle challenges related to growth, optimization, and continuous delivery, always with a focus on efficiency, quality, and long-term sustainability."
+    "description_1": "Full Stack Engineer with over 12 years of experience in digital products, focused on solving complex challenges and delivering real value to users and businesses.",
+    "description_2": "Currently working in e-commerce, contributing to high-traffic platforms and collaborating across web and mobile teams to deliver consistent, high-quality experiences.",
+    "description_3": "Strong focus on building performant, reliable, and scalable solutions, with experience in growth, optimization, and continuous delivery driven by efficiency and long-term sustainability."
   },
   "footer": {
     "keep_in_touch": "Let's keep in touch",

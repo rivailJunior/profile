@@ -14,11 +14,10 @@ import {
 export default function Profile() {
   return (
     <div className="bg-white">
-      <CenterContainer classNames="py-20">
+      <CenterContainer classNames="py-10 md:pt-20">
         <CardContainerV2 />
       </CenterContainer>
       <CardContainer />
-      <DividerSkills />
       <SkillsSlider />
       <DividerJobs />
       <Timeline />

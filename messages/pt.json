@@ -7,15 +7,15 @@
   "card_skills": "Conhecimento técnico",
   "card_years": "anos",
   "card_location": "Brasil",
-  "card_introduce": "Tornando problemas complexos em",
-  "card_introduce2": "Soluções web escaláveis e elegantes.",
+  "card_introduce": "Tornando problemas em",
+  "card_introduce2": "Soluções claras e escaláveis",
   "card_short_description": "Desenvolvimento de aplicações web com React, Nodejs e AWS.",
   "card_short_description2": "Sou especializado na criação de interfaces intuitivas e escaláveis, com forte experiência em: ",
   "card_short_skills": "Javascript, Typescript, NodeJs, React, React-Native e AWS.",
   "about_me": {
-    "description_1": "Engenheiro Full Stack com mais de 12 anos de experiência na construção e evolução de produtos digitais em diferentes contextos. Sou motivado por desafios complexos e focado em entregar soluções que gerem valor real para usuários e negócios.",
-    "description_2": "Ao longo da minha trajetória, atuei tanto em times enxutos quanto em organizações grandes e distribuídas. Atualmente, trabalho no setor de e-commerce, contribuindo para plataformas de alto tráfego e colaborando entre times web e mobile para entregar experiências consistentes e de alta qualidade aos usuários.",
-    "description_3": "Acredito fortemente na construção de soluções performáticas, confiáveis e escaláveis, capazes de atender às necessidades dos usuários em tempo real. Minha experiência me preparou para lidar com desafios relacionados a crescimento, otimização e entrega contínua, sempre com foco em eficiência, qualidade e sustentabilidade de longo prazo."
+    "description_1": "Engenheiro Full Stack com mais de 12 anos de experiência em produtos digitais, focado em resolver desafios complexos e gerar valor real para usuários e negócios.",
+    "description_2": "Atualmente, trabalho no setor de e-commerce, contribuindo para plataformas de alto tráfego e colaborando entre times web e mobile para entregar experiências consistentes e de alta qualidade.",
+    "description_3": "Tenho forte foco em soluções performáticas, confiáveis e escaláveis, com experiência em crescimento, otimização e entrega contínua orientada à eficiência e sustentabilidade."
   },
   "footer": {
     "keep_in_touch": "Vamos manter contato",
