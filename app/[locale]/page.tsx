@@ -4,7 +4,6 @@ import {
   CardContainer,
   FixedTranslateButton,
   Timeline,
-  DividerSkills,
   DividerJobs,
   CardContainerV2,
   SkillsSlider,
