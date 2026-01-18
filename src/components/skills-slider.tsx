@@ -51,7 +51,7 @@ function SkillsSlider() {
   };
 
   return (
-    <div className="mt-6 gap-5">
+    <div className="gap-5 py-10">
       <SliderWorker {...settings}>
         {bloxItems.map((item, index) => (
           <div key={`${item.name}-${index}`} className="p-2 pb-5">

@@ -11,13 +11,13 @@ const Title = (item: IExperience) => {
   return (
     <div className="flex flex-row items-center gap-6">
       <div
-        className={`flex h-8 w-8 items-center justify-center rounded-full  ${
+        className={`flex h-14 w-14 items-center justify-center rounded-full  ${
           item.status === "current"
-            ? "bg-blue-500 ring-8 ring-blue-400"
-            : "bg-blue-200 ring-8 ring-blue-100"
+            ? "bg-brand-cyan ring-8 ring-brand-cyan/50"
+            : "bg-brand-pink ring-8 ring-brand-pink/50"
         }`}
       >
-        <BsPersonWorkspace />
+        <BsPersonWorkspace className="text-white" size={24} />
       </div>
       <div className="flex-start flex flex-col items-start">
         <div className="flex flex-row justify-between">
@@ -37,7 +37,7 @@ const Title = (item: IExperience) => {
 const Content = (item: IExperience) => {
   return (
     <>
-      <p className="mb-1 pr-2 text-justify text-base font-normal text-brand-black/70">
+      <p className="mb-1 pr-2 text-justify text-base font-normal text-brand-black">
         {item.description}
       </p>
       <p className="pb-4 text-sm font-normal text-brand-black/70">

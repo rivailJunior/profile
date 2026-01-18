@@ -6,11 +6,11 @@ if [ -z "$husky_skip_init" ]; then
     fi
   }
 
-  readonly hook_name="$(basename "$0")"
+  readonly hook_name="$(basename -- "$0")"
   debug "starting $hook_name..."
 
   if [ "$HUSKY" = "0" ]; then
-    debug "HUSKY=0, skipping hook"
+    debug "HUSKY env variable is set to 0, skipping hook"
     exit 0
   fi
 
@@ -19,10 +19,18 @@ if [ -z "$husky_skip_init" ]; then
     . ~/.huskyrc
   fi
 
-  export readonly husky_skip_init=1
+  readonly husky_skip_init=1
+  export husky_skip_init
   sh -e "$0" "$@"
   exitCode="$?"
 
-  debug "finished $hook_name with exit code $exitCode"
+  if [ $exitCode != 0 ]; then
+    echo "husky - $hook_name hook exited with code $exitCode (error)"
+  fi
+
+  if [ $exitCode = 127 ]; then
+    echo "husky - command not found in PATH=$PATH"
+  fi
+
   exit $exitCode
 fi

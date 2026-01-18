@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 
 type AccordionProps = {
   data: {
@@ -11,33 +12,24 @@ type AccordionProps = {
 
 export function Accordion({ data }: Readonly<AccordionProps>) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [heights, setHeights] = useState<number[]>([]);
-  const contentRefs = React.useRef<(HTMLDivElement | null)[]>([]);
 
-  const toggleAccordion = (index: number) => {
+  const handleToggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Store content heights for smooth animations
-  React.useEffect(() => {
-    const newHeights = contentRefs.current.map((ref) =>
-      ref ? ref.scrollHeight : 0
-    );
-    setHeights(newHeights);
-  }, [data]);
-
   return (
-    <div id="accordion-collapse" className="flex flex-col gap-2">
+    <div id="accordion-collapse" className="flex flex-col gap-4">
       {data?.map((item, index) => {
         return (
-          <div key={index.toString()} className="flex flex-col rounded-lg ">
+          <div
+            key={index.toString()}
+            className="overflow-hidden rounded-lg border border-gray-200 bg-white"
+          >
             <h2 id={`accordion-collapse-heading-` + index}>
               <button
                 type="button"
-                className={`flex h-auto w-full items-center justify-between gap-3 rounded-lg border border-gray-200 bg-white p-5 font-medium text-brand-black ${
-                  openIndex === index ? "bg-gray-100" : ""
-                }`}
-                onClick={() => toggleAccordion(index)}
+                className="flex h-auto w-full items-center justify-between gap-3 bg-white p-5 font-medium text-brand-black"
+                onClick={() => handleToggleAccordion(index)}
                 aria-expanded={openIndex === index}
                 aria-controls={"accordion-collapse-body-" + index}
               >
@@ -62,23 +54,24 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
                 </svg>
               </button>
             </h2>
-            <div
-              id={"accordion-collapse-body-" + index}
-              className="flex overflow-hidden transition-all duration-300"
-              style={{
-                maxHeight:
-                  openIndex === index ? `${heights[index] || 0}px` : "0px",
-                opacity: openIndex === index ? 1 : 0,
-                transition:
-                  "max-height 300ms ease-in-out, opacity 300ms ease-in-out",
-              }}
-              aria-labelledby={"accordion-collapse-heading-" + index}
-              ref={(el) => (contentRefs.current[index] = el) as any}
-            >
-              <div className="w-full rounded-lg border border-gray-200 bg-white p-5 text-brand-black">
-                {item.content}
-              </div>
-            </div>
+
+            <AnimatePresence initial={false}>
+              {openIndex === index ? (
+                <motion.div
+                  id={"accordion-collapse-body-" + index}
+                  aria-labelledby={"accordion-collapse-heading-" + index}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.25, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
+                  <div className="w-full px-5 pb-5 text-brand-black">
+                    {item.content}
+                  </div>
+                </motion.div>
+              ) : null}
+            </AnimatePresence>
           </div>
         );
       })}

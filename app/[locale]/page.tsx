@@ -4,7 +4,6 @@ import {
   CardContainer,
   FixedTranslateButton,
   Timeline,
-  DividerJobs,
   CardContainerV2,
   SkillsSlider,
   CenterContainer,
@@ -18,8 +17,9 @@ export default function Profile() {
       </CenterContainer>
       <CardContainer />
       <SkillsSlider />
-      <DividerJobs />
-      <Timeline />
+      <CenterContainer>
+        <Timeline />
+      </CenterContainer>
       <FixedTranslateButton />
 
       <Footer />
