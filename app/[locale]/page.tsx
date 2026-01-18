@@ -17,9 +17,11 @@ export default function Profile() {
       </CenterContainer>
       <CardContainer />
       <SkillsSlider />
-      <CenterContainer>
-        <Timeline />
-      </CenterContainer>
+      <div className="w-full bg-brand-cyan/50 py-5 md:py-10">
+        <CenterContainer>
+          <Timeline />
+        </CenterContainer>
+      </div>
       <FixedTranslateButton />
 
       <Footer />

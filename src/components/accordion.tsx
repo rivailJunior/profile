@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { BiPlusCircle, BiMinusCircle } from "react-icons/bi";
 
 type AccordionProps = {
   data: {
@@ -18,40 +19,53 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
   };
 
   return (
-    <div id="accordion-collapse" className="flex flex-col gap-4">
+    <div
+      id="accordion-collapse"
+      className="mx-2 flex flex-col gap-2 md:mx-0 md:gap-4"
+    >
       {data?.map((item, index) => {
         return (
-          <div
+          <motion.div
+            whileHover={{ scale: 1.02 }}
             key={index.toString()}
-            className="overflow-hidden rounded-lg border border-gray-200 bg-white"
+            className={`overflow-hidden rounded-lg border border-gray-200 bg-white hover:shadow-lg ${
+              openIndex === index ? "shadow-lg" : ""
+            }`}
           >
             <h2 id={`accordion-collapse-heading-` + index}>
               <button
                 type="button"
-                className="flex h-auto w-full items-center justify-between gap-3 bg-white p-5 font-medium text-brand-black"
+                className="flex h-auto w-full justify-between gap-2 bg-white p-5 font-medium text-brand-black md:items-center"
                 onClick={() => handleToggleAccordion(index)}
                 aria-expanded={openIndex === index}
                 aria-controls={"accordion-collapse-body-" + index}
               >
                 <span className="text-brand-black">{item.title}</span>
-                <svg
-                  data-accordion-icon
-                  className={`h-3 w-3 shrink-0 text-brand-black transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-0" : "rotate-180"
-                  }`}
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5 5 1 1 5"
-                  />
-                </svg>
+                <AnimatePresence mode="wait" initial={false}>
+                  {openIndex === index ? (
+                    <motion.span
+                      key="minus"
+                      initial={{ opacity: 0, rotate: -90, scale: 0.9 }}
+                      animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                      exit={{ opacity: 0, rotate: 90, scale: 0.9 }}
+                      transition={{ duration: 0.18, ease: "linear" }}
+                      className="shrink-0"
+                    >
+                      <BiMinusCircle className="h-8 w-8 text-brand-pink md:h-10 md:w-10" />
+                    </motion.span>
+                  ) : (
+                    <motion.span
+                      key="plus"
+                      initial={{ opacity: 0, rotate: 90, scale: 0.9 }}
+                      animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                      exit={{ opacity: 0, rotate: -90, scale: 0.9 }}
+                      transition={{ duration: 0.18, ease: "linear" }}
+                      className="shrink-0"
+                    >
+                      <BiPlusCircle className="h-8 w-8 text-brand-pink md:h-10 md:w-10" />
+                    </motion.span>
+                  )}
+                </AnimatePresence>
               </button>
             </h2>
 
@@ -63,7 +77,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.25, ease: "easeInOut" }}
+                  transition={{ duration: 0.25, ease: "linear" }}
                   className="overflow-hidden"
                 >
                   <div className="w-full px-5 pb-5 text-brand-black">
@@ -72,7 +86,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
                 </motion.div>
               ) : null}
             </AnimatePresence>
-          </div>
+          </motion.div>
         );
       })}
     </div>
