@@ -12,18 +12,17 @@ import {
 export default function Profile() {
   return (
     <div className="bg-white">
+      <FixedTranslateButton />
       <CenterContainer classNames="py-10 md:pt-20">
         <CardContainerV2 />
       </CenterContainer>
       <CardContainer />
-      <SkillsSlider />
-      <div className="w-full bg-brand-cyan/50 py-5 md:py-10">
+      <div className="w-full py-5 md:py-10">
         <CenterContainer>
           <Timeline />
         </CenterContainer>
       </div>
-      <FixedTranslateButton />
-
+      <SkillsSlider />
       <Footer />
     </div>
   );

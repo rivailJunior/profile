@@ -28,19 +28,19 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
           <motion.div
             whileHover={{ scale: 1.02 }}
             key={index.toString()}
-            className={`overflow-hidden rounded-lg border border-gray-200 bg-white hover:shadow-lg ${
+            className={`group overflow-hidden rounded-lg border border-gray-200 bg-white hover:shadow-lg ${
               openIndex === index ? "shadow-lg" : ""
             }`}
           >
             <h2 id={`accordion-collapse-heading-` + index}>
               <button
                 type="button"
-                className="flex h-auto w-full justify-between gap-2 bg-white p-5 font-medium text-brand-black md:items-center"
+                className="flex h-auto w-full justify-between gap-2 bg-white p-5 font-medium text-brand-black group-hover:bg-brand-cyan-gradient md:items-center"
                 onClick={() => handleToggleAccordion(index)}
                 aria-expanded={openIndex === index}
                 aria-controls={"accordion-collapse-body-" + index}
               >
-                <span className="text-brand-black">{item.title}</span>
+                <div>{item.title}</div>
                 <AnimatePresence mode="wait" initial={false}>
                   {openIndex === index ? (
                     <motion.span
@@ -51,7 +51,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
                       transition={{ duration: 0.18, ease: "linear" }}
                       className="shrink-0"
                     >
-                      <BiMinusCircle className="h-8 w-8 text-brand-pink md:h-10 md:w-10" />
+                      <BiMinusCircle className="h-8 w-8 text-brand-pink group-hover:text-white md:h-10 md:w-10" />
                     </motion.span>
                   ) : (
                     <motion.span
@@ -62,7 +62,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
                       transition={{ duration: 0.18, ease: "linear" }}
                       className="shrink-0"
                     >
-                      <BiPlusCircle className="h-8 w-8 text-brand-pink md:h-10 md:w-10" />
+                      <BiPlusCircle className="h-8 w-8 text-brand-pink group-hover:text-white md:h-10 md:w-10" />
                     </motion.span>
                   )}
                 </AnimatePresence>
@@ -80,7 +80,7 @@ export function Accordion({ data }: Readonly<AccordionProps>) {
                   transition={{ duration: 0.25, ease: "linear" }}
                   className="overflow-hidden"
                 >
-                  <div className="w-full px-5 pb-5 text-brand-black">
+                  <div className="w-full p-5 text-brand-black ">
                     {item.content}
                   </div>
                 </motion.div>

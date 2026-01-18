@@ -12,9 +12,9 @@ const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 const Title = (item: IExperience) => {
   return (
-    <div className="flex flex-row gap-4  md:items-center md:gap-5 md:p-5">
+    <div className="flex flex-row gap-4 md:items-center md:gap-5 md:p-5">
       <div
-        className={`flex h-10 w-10 items-center justify-center rounded-full md:h-14 md:w-14  ${
+        className={`flex h-8 w-8 items-center justify-center rounded-full md:h-14 md:w-14  ${
           item.status === "current"
             ? "bg-brand-cyan ring-8 ring-brand-cyan/50"
             : "bg-brand-pink ring-8 ring-brand-pink/50"
@@ -25,14 +25,18 @@ const Title = (item: IExperience) => {
       <div className="flex-start flex flex-col items-start">
         <div className="flex flex-col justify-normal md:flex-row md:justify-between">
           <time className="mb-2 flex flex-col gap-2 text-left text-sm font-thin leading-relaxed text-brand-black md:flex-row md:items-center md:text-justify md:text-xl">
-            <div className={`${roboto.className} md:text-2xl`}>
+            <div
+              className={`${roboto.className} group-hover:text-white md:text-2xl`}
+            >
               {item.company}
             </div>{" "}
-            <span className="text-brand-pink">• {item.position}</span>
+            <span className="text-brand-pink group-hover:text-white">
+              • {item.position}
+            </span>
           </time>
         </div>
         <div
-          className={`text-left text-sm font-thin text-brand-pink md:text-lg`}
+          className={`text-left text-sm font-thin text-brand-pink group-hover:text-white md:text-lg`}
         >
           {item.period}
         </div>

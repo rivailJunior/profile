@@ -24,49 +24,49 @@
   "experience": {
     "trafilea": {
       "company": "Trafilea, America Latina",
-      "position": "Engenheiro Front-End Sr",
+      "position": "Front-End Sr",
       "period": "Fev 2024 - Atual",
       "description": "Na Trafilea Tech E-commerce Group, colaboro com o time de Produtos no desenvolvimento de funcionalidades orientadas a vendas utilizando React, Next.js e Aws. Arquiteto e entrego novas features semanalmente, com foco em escalabilidade, performance e experiência do cliente."
     },
     "addi": {
       "company": "Addi, America Latina",
-      "position": "Engenheiro Front-End Sr",
+      "position": "Front-End Sr",
       "period": "Maio 2022 - Novembro 2023",
       "description": "Na Addi, contribuí para uma plataforma de pagamentos BNPL (Buy Now, Pay Later) que opera na Colômbia e no Brasil. Atuei tanto no desenvolvimento web quanto mobile, utilizando React, Next.js, React Native e Aws, em colaboração com uma equipe internacional em um ambiente de comunicação em inglês. Esse papel me permitiu explorar todo o ecossistema React para entregar experiências escaláveis, consistentes e de alta qualidade aos usuários."
     },
     "olist": {
       "company": "Olist, Brasil",
-      "position": "Engenheiro Front-End Sr",
+      "position": "Front-End Sr",
       "period": "Junho 2021 - Maio 2022",
       "description": "Fiz parte de soluções de crescimento estratégico, voltado para lead de novos vendedores para a plataforma. Junto a Olist tive a oportunidade de estar fazer parte de um projeto focado em clientes lojistas. Nosso objetivo era melhorar a entrada de novos clientes para a plataforma, facilitando o cadastro e os demais meios de pagamento a partir dessa inicial experiencia. Na Olist tive papel importante na construção de uma nova arquitetura para o time de front-end, ajudando a implementar o primeiro back-end for front-end da equipe de front. Fui papel importante também na construção de um CLI da empresa, ajudando os desenvolvedores a criarem projetos a partir de alguns comandos no terminal."
     },
     "tarkuss": {
       "company": "Tarkus, Brasil",
-      "position": "Líder técnico e EngenheiroFront-End Sr",
+      "position": "Líder técnico",
       "period": "Maio 2019 - Maio 2021",
       "description": "Na Tarkus, assumi meu primeiro grande desafio como Tech Lead, liderando a formação e o crescimento de times de engenharia. Fui responsável pela contratação de profissionais, definição do stack tecnológico e liderança no desenvolvimento de novos projetos. Atuei de forma decisiva na arquitetura e entrega de uma plataforma de Cashback, incluindo o desenvolvimento de todas as APIs de suporte para aplicações web e mobile. A solução atendia tanto usuários B2B quanto B2C, com foco em aprimorar a experiência de compra em lojas físicas por meio de recomendações personalizadas baseadas no histórico de compras e recompensas em cashback."
     },
     "itriad": {
       "company": "Instituto Itriad, Brasil",
-      "position": "Engenheiro Front-End Sr",
+      "position": "Front-End Sr",
       "period": "Outubro 2016 - Abril 2019",
       "description": "Fiz parte de dois times dentro da Itriad, GlobalTool - Alcatel Onetouch - e Kaios. No Globaltool atendia pelo time de suporte, realizando tarefazes de manutencao da plataforma e desenvolvimento de novas funcionalidades. Pouco mais de 4 meses depois tive a oportunidade de me juntar ao time do Kaios. No Kaios realizei trabalho de planejamento e desenvolvimento de Aplicativos Mobile (react.js) para KaiOS (Mozilla Mobile). Desenvolvi algumas aplicações como Kay Map (POI), Kay Music, Settings, Kay Activity Todo List e Kay Exchange."
     },
     "axm": {
       "company": "Instituto AXM, Brasil",
-      "position": "Engenheiro Full-Stack Pl",
+      "position": "Full-Stack Pl",
       "period": "Outubro 2015 - Outubro 2016.",
       "description": "A AXM foi a primeira oportunidade de trabalhar com Pagamentos Eletronicos. Participei da criação do sistema implementando desde a parte do gateway de pagamento, conciliação de vendas e gerenciamento de dashboard do cliente. Ajudei na implementação da API de notificação de transações realizadas no terminal POS para clientes que possuiam o Back-Office próprio. Fiz parte também do time que desenvolveu uma API e um PDV web complementado todo o CMS da Whirlpool para o controle de estoque e conciliação de controle de vendas."
     },
     "novaera": {
       "company": "Mercantil Nova Era, Brasil",
-      "position": "Engenheiro Full-Stack",
+      "position": "Full-Stack",
       "period": "Setembro 2014 - Junho 2015.",
       "description": "Fui parte do time de desenvolvimento de sistemas internos trabalhando em conjunto com o ERP da empresa (CONSINCO). Participei na criação de um sistema para conciliação de compras efetuadas com cartão nos terminais POS. Criei dois módulos de consultas de vendas efetuadas na empresa atacadista do grupo, assim como um módulo que suprisse a mesma necessidade das empresas de Cash & Carry. Ajudei na criação de um sistema de inventário - inventários para a parte de logística da empresa. Desenvolvi tambem um sistema de Busca de Preço - app android com api rest em php - consultas de preços e armazenamento na base do ERP."
     },
     "adptdata": {
       "company": "Adapt Data, Brasil",
-      "position": "Full-Stack Engineer",
+      "position": "Full-Stack",
       "period": "Novembro 2013 - Maio 2014.",
       "description": "Desenvolvimento dos sistemas - Bares & Lanches (PDV), Despachantes Manaus (Controle de ordem de serviço) - sendo ambos sistemas internos."
     }

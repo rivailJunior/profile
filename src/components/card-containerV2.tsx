@@ -26,10 +26,11 @@ export function CardContainerV2() {
         ></Image>
       </div>
       <div className="md:w-2/3">
-        <div className="gap-4 rounded-md bg-white p-5 pb-0">
-          <h3 className="text-align-justify mb-1 text-4xl font-bold leading-normal md:text-8xl">
+        <div className="bg-whiten flex flex-col items-start gap-4 rounded-md">
+          {/* Introduce */}
+          <h3 className="text-center text-4xl font-bold leading-normal md:text-left md:text-8xl">
             <p className="w-7/10 text-brand-black">{t("card_introduce")} </p>
-            <p className="pt-5">
+            <p className="md:pt-5">
               <TypingText
                 text={t("card_introduce2")}
                 className={`w-7/10 ${libreBaskerville.className} text-brand-cyan`}
@@ -38,34 +39,38 @@ export function CardContainerV2() {
               />
             </p>
           </h3>
-          <div className="text-md mt-5 bg-white text-justify font-mono leading-8 text-brand-black md:text-lg">
+
+          {/* Shot Description */}
+          <div className="text-md font-regular mt-0 leading-8 text-brand-black md:mt-4 md:text-xl">
             {t("card_short_description")}
           </div>
-          <div className="mt-5 flex flex-col justify-start gap-2 md:flex-row md:gap-4 ">
-            <div className="flex flex-row items-center">
+
+          {/* Icons */}
+          <div className="mt-4 flex w-full flex-row justify-between md:flex-row md:justify-start md:gap-4">
+            <div className="flex flex-col items-center md:flex-row">
               <MdLocationPin
                 size={20}
                 className="fas fa-briefcase text-lg text-brand-black"
               />
-              <span className="md:text-md ml-1 font-mono  text-sm text-brand-black">
+              <span className="font-regular ml-1 text-sm text-brand-black md:text-lg">
                 {t("card_location")}
               </span>
             </div>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-col items-center md:flex-row">
               <MdSchool
                 size={20}
-                className="fas fa-university  text-lg text-brand-black"
+                className="fas fa-university text-lg text-brand-black"
               />
-              <span className="md:text-md ml-1 font-mono  text-sm text-brand-black  ">
+              <span className="font-regular ml-1 text-sm text-brand-black md:text-lg  ">
                 {t("card_degree_title")}
               </span>
             </div>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-col items-center md:flex-row">
               <MdComputer
                 size={20}
                 className="fas fa-briefcase text-lg text-brand-black"
               />
-              <span className="md:text-md ml-1 font-mono  text-sm text-brand-black ">
+              <span className="font-regular ml-1 text-sm text-brand-black md:text-lg ">
                 {t("card_job_title")}
               </span>
             </div>
