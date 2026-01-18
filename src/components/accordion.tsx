@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { BiPlusCircle, BiMinusCircle } from "react-icons/bi";
 
 type AccordionProps = {
   data: {
@@ -11,75 +13,80 @@ type AccordionProps = {
 
 export function Accordion({ data }: Readonly<AccordionProps>) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [heights, setHeights] = useState<number[]>([]);
-  const contentRefs = React.useRef<(HTMLDivElement | null)[]>([]);
 
-  const toggleAccordion = (index: number) => {
+  const handleToggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Store content heights for smooth animations
-  React.useEffect(() => {
-    const newHeights = contentRefs.current.map((ref) =>
-      ref ? ref.scrollHeight : 0
-    );
-    setHeights(newHeights);
-  }, [data]);
-
   return (
-    <div id="accordion-collapse" className="flex flex-col gap-2">
+    <div
+      id="accordion-collapse"
+      className="mx-2 flex flex-col gap-2 md:mx-0 md:gap-4"
+    >
       {data?.map((item, index) => {
         return (
-          <div key={index.toString()} className="flex flex-col rounded-lg ">
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            key={index.toString()}
+            className={`overflow-hidden rounded-lg border border-gray-200 bg-white hover:shadow-lg ${
+              openIndex === index ? "shadow-lg" : ""
+            }`}
+          >
             <h2 id={`accordion-collapse-heading-` + index}>
               <button
                 type="button"
-                className={`flex h-auto w-full items-center justify-between gap-3 rounded-lg border border-gray-200 bg-white p-5 font-medium text-brand-black ${
-                  openIndex === index ? "bg-gray-100" : ""
-                }`}
-                onClick={() => toggleAccordion(index)}
+                className="flex h-auto w-full justify-between gap-2 bg-white p-5 font-medium text-brand-black md:items-center"
+                onClick={() => handleToggleAccordion(index)}
                 aria-expanded={openIndex === index}
                 aria-controls={"accordion-collapse-body-" + index}
               >
                 <span className="text-brand-black">{item.title}</span>
-                <svg
-                  data-accordion-icon
-                  className={`h-3 w-3 shrink-0 text-brand-black transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-0" : "rotate-180"
-                  }`}
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5 5 1 1 5"
-                  />
-                </svg>
+                <AnimatePresence mode="wait" initial={false}>
+                  {openIndex === index ? (
+                    <motion.span
+                      key="minus"
+                      initial={{ opacity: 0, rotate: -90, scale: 0.9 }}
+                      animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                      exit={{ opacity: 0, rotate: 90, scale: 0.9 }}
+                      transition={{ duration: 0.18, ease: "linear" }}
+                      className="shrink-0"
+                    >
+                      <BiMinusCircle className="h-8 w-8 text-brand-pink md:h-10 md:w-10" />
+                    </motion.span>
+                  ) : (
+                    <motion.span
+                      key="plus"
+                      initial={{ opacity: 0, rotate: 90, scale: 0.9 }}
+                      animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                      exit={{ opacity: 0, rotate: -90, scale: 0.9 }}
+                      transition={{ duration: 0.18, ease: "linear" }}
+                      className="shrink-0"
+                    >
+                      <BiPlusCircle className="h-8 w-8 text-brand-pink md:h-10 md:w-10" />
+                    </motion.span>
+                  )}
+                </AnimatePresence>
               </button>
             </h2>
-            <div
-              id={"accordion-collapse-body-" + index}
-              className="flex overflow-hidden transition-all duration-300"
-              style={{
-                maxHeight:
-                  openIndex === index ? `${heights[index] || 0}px` : "0px",
-                opacity: openIndex === index ? 1 : 0,
-                transition:
-                  "max-height 300ms ease-in-out, opacity 300ms ease-in-out",
-              }}
-              aria-labelledby={"accordion-collapse-heading-" + index}
-              ref={(el) => (contentRefs.current[index] = el) as any}
-            >
-              <div className="w-full rounded-lg border border-gray-200 bg-white p-5 text-brand-black">
-                {item.content}
-              </div>
-            </div>
-          </div>
+
+            <AnimatePresence initial={false}>
+              {openIndex === index ? (
+                <motion.div
+                  id={"accordion-collapse-body-" + index}
+                  aria-labelledby={"accordion-collapse-heading-" + index}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.25, ease: "linear" }}
+                  className="overflow-hidden"
+                >
+                  <div className="w-full px-5 pb-5 text-brand-black">
+                    {item.content}
+                  </div>
+                </motion.div>
+              ) : null}
+            </AnimatePresence>
+          </motion.div>
         );
       })}
     </div>

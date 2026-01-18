@@ -6,27 +6,34 @@ import { useTranslations } from "next-intl";
 import { JobExperienceSkillsData } from "../mock/stack-data";
 import { Accordion } from "./accordion";
 import { BsPersonWorkspace } from "react-icons/bs";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 const Title = (item: IExperience) => {
   return (
-    <div className="flex flex-row items-center gap-6">
+    <div className="flex flex-row gap-4  md:items-center md:gap-5 md:p-5">
       <div
-        className={`flex h-8 w-8 items-center justify-center rounded-full  ${
+        className={`flex h-10 w-10 items-center justify-center rounded-full md:h-14 md:w-14  ${
           item.status === "current"
-            ? "bg-blue-500 ring-8 ring-blue-400"
-            : "bg-blue-200 ring-8 ring-blue-100"
+            ? "bg-brand-cyan ring-8 ring-brand-cyan/50"
+            : "bg-brand-pink ring-8 ring-brand-pink/50"
         }`}
       >
-        <BsPersonWorkspace />
+        <BsPersonWorkspace className="size-4 text-white md:size-8" />
       </div>
       <div className="flex-start flex flex-col items-start">
-        <div className="flex flex-row justify-between">
-          <time className="mb-2 block text-sm font-normal leading-none text-brand-black">
-            {item.company}{" "}
+        <div className="flex flex-col justify-normal md:flex-row md:justify-between">
+          <time className="mb-2 flex flex-col gap-2 text-left text-sm font-thin leading-relaxed text-brand-black md:flex-row md:items-center md:text-justify md:text-xl">
+            <div className={`${roboto.className} md:text-2xl`}>
+              {item.company}
+            </div>{" "}
             <span className="text-brand-pink">• {item.position}</span>
           </time>
         </div>
-        <div className="text-sm font-normal text-brand-cyan/80">
+        <div
+          className={`text-left text-sm font-thin text-brand-pink md:text-lg`}
+        >
           {item.period}
         </div>
       </div>
@@ -37,10 +44,10 @@ const Title = (item: IExperience) => {
 const Content = (item: IExperience) => {
   return (
     <>
-      <p className="mb-1 pr-2 text-justify text-base font-normal text-brand-black/70">
+      <p className="mb-1 pr-2 text-justify text-base font-thin text-brand-black md:text-xl">
         {item.description}
       </p>
-      <p className="pb-4 text-sm font-normal text-brand-black/70">
+      <p className="pb-4 text-sm font-thin text-brand-black/70 md:text-lg">
         {item.skills?.join(", ")}
       </p>
     </>

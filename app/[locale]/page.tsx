@@ -4,8 +4,6 @@ import {
   CardContainer,
   FixedTranslateButton,
   Timeline,
-  DividerSkills,
-  DividerJobs,
   CardContainerV2,
   SkillsSlider,
   CenterContainer,
@@ -14,14 +12,16 @@ import {
 export default function Profile() {
   return (
     <div className="bg-white">
-      <CenterContainer classNames="py-20">
+      <CenterContainer classNames="py-10 md:pt-20">
         <CardContainerV2 />
       </CenterContainer>
       <CardContainer />
-      <DividerSkills />
       <SkillsSlider />
-      <DividerJobs />
-      <Timeline />
+      <div className="w-full bg-brand-cyan/50 py-5 md:py-10">
+        <CenterContainer>
+          <Timeline />
+        </CenterContainer>
+      </div>
       <FixedTranslateButton />
 
       <Footer />

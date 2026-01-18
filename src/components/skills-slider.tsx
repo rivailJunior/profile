@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { StacksExperienceData } from "../mock/stack-data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion";
 
 // Take first 6 items from StacksExperienceData for the slider
 const bloxItems = StacksExperienceData.map((item, index) => ({
@@ -18,9 +19,9 @@ const SliderWorker = Slider as unknown as ComponentType<Settings>;
 function SkillsSlider() {
   const settings = {
     infinite: true,
-    speed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    speed: 2000,
+    slidesToShow: 10,
+    slidesToScroll: 10,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
@@ -35,41 +36,44 @@ function SkillsSlider() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 4,
         },
       },
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 3,
         },
       },
     ],
   };
 
   return (
-    <div className="rounded-b-lg p-4">
+    <div className="gap-5 py-10">
       <SliderWorker {...settings}>
         {bloxItems.map((item, index) => (
-          <div key={`${item.name}-${index}`} className="px-2 ">
-            <div
-              className={`mx-auto flex w-auto items-center justify-center rounded-lg bg-brand-black px-4 py-8 hover:cursor-pointer  hover:text-brand-black`}
+          <div key={`${item.name}-${index}`} className="p-2 pb-5">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.4 }}
+              animate={{ scale: 1 }}
+              className={`flex h-24 w-24 items-center justify-center rounded-full border-2 shadow-sm hover:cursor-pointer hover:shadow-md md:h-32 md:w-32`}
             >
               <div
-                className={`flex flex-row items-center justify-center gap-4`}
+                className={`flex flex-col items-center justify-center gap-2`}
               >
-                <div className="flex h-8 w-8 items-center justify-center text-white hover:text-brand-black">
+                <div className="flex h-4 w-4 items-center justify-center text-brand-black md:h-8 md:w-8">
                   <item.icon className="text-inherit" size={36} />
                 </div>
-                <span
-                  className={`text-center text-sm font-bold capitalize text-white  hover:text-brand-black md:text-lg`}
+                {/* <span
+                  className={`text-center font-mono text-sm capitalize text-brand-black md:text-xl`}
                 >
                   {item.name}
-                </span>
+                </span> */}
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </SliderWorker>
