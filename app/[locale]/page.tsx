@@ -8,6 +8,7 @@ import {
   SkillsSlider,
   CenterContainer,
 } from "../../src/components";
+// import { HoverFillCard } from "../../src/components/hover-card";
 
 export default function Profile() {
   return (
@@ -23,6 +24,9 @@ export default function Profile() {
         </CenterContainer>
       </div>
       <SkillsSlider />
+      {/* <HoverFillCard>
+        <p>Test</p>
+      </HoverFillCard> */}
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import { StacksExperienceData } from "../mock/stack-data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { motion } from "framer-motion";
+import { HoverFillCard } from "./hover-card";
 
 // Take first 6 items from StacksExperienceData for the slider
 const bloxItems = StacksExperienceData.map((item, index) => ({
@@ -65,7 +65,7 @@ function SkillsSlider() {
             key={`${item.name}-${index}`}
             className="mx-auto py-14 md:py-20 "
           >
-            <motion.div
+            {/* <motion.div
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.5 }}
               animate={{ scale: 1 }}
@@ -78,7 +78,16 @@ function SkillsSlider() {
                   <item.icon className="h-12 w-12 text-brand-cyan group-hover:text-brand-cyanHover md:h-20 md:w-20" />
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
+            <HoverFillCard className="flex h-36 w-36 items-center justify-center rounded-full bg-white">
+              <div
+                className={`flex flex-col items-center justify-center gap-2 `}
+              >
+                <div className="flex h-auto w-auto items-center justify-center  text-brand-black">
+                  <item.icon className="h-12 w-12 text-brand-cyan group-hover:text-white md:h-20 md:w-20 " />
+                </div>
+              </div>
+            </HoverFillCard>
           </div>
         ))}
       </SliderWorker>

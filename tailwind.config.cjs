@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "brand-cyan-gradient":
-          "linear-gradient(to right bottom, #23bec5, #1fb1b8, #1aa5ab, #16989f, #128c92);",
+          "linear-gradient(to right bottom, #5acdd2, #4fc4c9, #43bac0, #37b1b7, #29a8ae);",
       },
       colors: {
         brand: {
