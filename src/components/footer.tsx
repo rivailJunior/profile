@@ -2,6 +2,13 @@
 "use client";
 import { FaTwitter, FaInstagram, FaGit, FaLinkedin } from "react-icons/fa";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: "500",
+});
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -12,33 +19,44 @@ export default function Footer() {
   return (
     <div className="relative mt-10 pb-5">
       <div className="container mx-auto flex flex-col items-center justify-center text-brand-black">
-        <div className="mb-2 font-light capitalize text-brand-pink">
+        <div
+          className={`mb-2 text-3xl font-bold leading-7 text-brand-black ${roboto.className}`}
+        >
           {t("social_midia_call_to_action")}
         </div>
         <div className="mt-2 flex flex-row items-center justify-between  align-middle">
-          <button
+          <motion.button
             aria-label="Twitter"
-            className="m-1 h-10 w-10 rounded-full bg-brand-cyan p-3 font-normal text-brand-black shadow-lg hover:bg-brand-cyan/90"
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 1.3 }}
+            transition={{ type: "spring", stiffness: 260, damping: 18 }}
+            className="m-1 flex h-10 w-10 items-center justify-center rounded-full bg-white p-3 font-normal text-brand-black shadow-lg outline-none transition-colors duration-200 hover:bg-brand-pink hover:text-white focus-visible:bg-brand-pink focus-visible:text-white"
             type="button"
             onClick={() =>
               handleClickSocial("https://twitter.com/rivaildossantos")
             }
           >
             <FaTwitter />
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             aria-label="Instagram"
-            className="m-1 h-10 w-10 rounded-full bg-brand-pink p-3 font-normal text-brand-black shadow-lg hover:bg-brand-pink/90"
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 1.3 }}
+            transition={{ type: "spring", stiffness: 260, damping: 18 }}
+            className="m-1 flex h-10 w-10 items-center justify-center rounded-full bg-white p-3 font-normal text-brand-black shadow-lg outline-none transition-colors duration-200 hover:bg-brand-pink hover:text-white focus-visible:bg-brand-pink focus-visible:text-white"
             type="button"
             onClick={() =>
               handleClickSocial("https://www.instagram.com/rivailpinto/")
             }
           >
             <FaInstagram />
-          </button>
-          <button
+          </motion.button>
+          <motion.button
             aria-label="Linkedin"
-            className="m-1 h-10 w-10 rounded-full bg-brand-cyan p-3 font-normal text-brand-black shadow-lg hover:bg-brand-cyan/90"
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 1.3 }}
+            transition={{ type: "spring", stiffness: 260, damping: 18 }}
+            className="m-1 flex h-10 w-10 items-center justify-center rounded-full bg-white p-3 font-normal text-brand-black shadow-lg outline-none transition-colors duration-200 hover:bg-brand-pink hover:text-white focus-visible:bg-brand-pink focus-visible:text-white"
             type="button"
             onClick={() =>
               handleClickSocial(
@@ -47,16 +65,19 @@ export default function Footer() {
             }
           >
             <FaLinkedin />
-          </button>
+          </motion.button>
 
-          <button
+          <motion.button
             aria-label="Github"
-            className="m-1 h-10 w-10  rounded-full bg-brand-black p-3 font-normal text-brand-cyan shadow-lg outline-none hover:bg-brand-black/90 focus:outline-none"
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 1.3 }}
+            transition={{ type: "spring", stiffness: 260, damping: 18 }}
+            className="m-1 flex h-10 w-10 items-center justify-center rounded-full bg-white p-3 font-normal text-brand-black shadow-lg outline-none transition-colors duration-200 hover:bg-brand-pink hover:text-white focus-visible:bg-brand-pink focus-visible:text-white"
             type="button"
             onClick={() => handleClickSocial("https://github.com/rivailJunior")}
           >
             <FaGit />
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>

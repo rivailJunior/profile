@@ -7,6 +7,14 @@ import Image from "next/image";
 import { Libre_Baskerville } from "next/font/google";
 import { motion } from "motion/react";
 
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: "700",
@@ -41,18 +49,28 @@ export function CardContainerV2() {
           </h3>
 
           {/* Shot Description */}
-          <div className="text-md font-regular mt-0 leading-8 text-brand-black md:mt-4 md:text-xl">
+          <div
+            className={
+              "text-md font-regular mt-0 leading-8 text-brand-black md:mt-4 md:text-xl " +
+              roboto.className
+            }
+          >
             {t("card_short_description")}
           </div>
 
           {/* Icons */}
-          <div className="mt-4 flex w-full flex-row justify-between md:flex-row md:justify-start md:gap-4">
+          <div className="mt-0 flex w-full flex-row justify-between md:flex-row md:justify-start md:gap-4">
             <div className="flex flex-col items-center md:flex-row">
               <MdLocationPin
                 size={20}
                 className="fas fa-briefcase text-lg text-brand-black"
               />
-              <span className="font-regular ml-1 text-sm text-brand-black md:text-lg">
+              <span
+                className={
+                  "font-regular ml-1 text-sm text-brand-black md:text-lg " +
+                  roboto.className
+                }
+              >
                 {t("card_location")}
               </span>
             </div>
@@ -61,7 +79,12 @@ export function CardContainerV2() {
                 size={20}
                 className="fas fa-university text-lg text-brand-black"
               />
-              <span className="font-regular ml-1 text-sm text-brand-black md:text-lg  ">
+              <span
+                className={
+                  "font-regular ml-1 text-sm text-brand-black md:text-lg  " +
+                  roboto.className
+                }
+              >
                 {t("card_degree_title")}
               </span>
             </div>
@@ -70,7 +93,12 @@ export function CardContainerV2() {
                 size={20}
                 className="fas fa-briefcase text-lg text-brand-black"
               />
-              <span className="font-regular ml-1 text-sm text-brand-black md:text-lg ">
+              <span
+                className={
+                  "font-regular ml-1 text-sm text-brand-black md:text-lg " +
+                  roboto.className
+                }
+              >
                 {t("card_job_title")}
               </span>
             </div>
