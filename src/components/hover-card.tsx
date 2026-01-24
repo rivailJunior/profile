@@ -12,6 +12,8 @@ export const HoverFillCard = ({ children, className }: HoverFillCardProps) => {
   return (
     <motion.div
       initial="rest"
+      whileTap="hover"
+      whileFocus="hover"
       whileHover="hover"
       animate="rest"
       className={`relative overflow-hidden ${className} group cursor-pointer`}
@@ -19,7 +21,7 @@ export const HoverFillCard = ({ children, className }: HoverFillCardProps) => {
       {/* Fill layer */}
       <motion.div
         variants={{
-          rest: { scale: 0, opacity: 0 },
+          rest: { scale: 0, opacity: 1 },
           hover: { scale: 1.3, opacity: 1 },
         }}
         transition={{ type: "spring", stiffness: 220, damping: 22 }}

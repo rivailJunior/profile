@@ -19,7 +19,7 @@
   },
   "footer": {
     "keep_in_touch": "Let's keep in touch",
-    "social_midia_call_to_action": "my social profiles"
+    "social_midia_call_to_action": "Follow me"
   },
   "experience": {
     "trafilea": {
@@ -37,7 +37,7 @@
     "olist": {
       "company": "Olist, Brazil",
       "position": "SR Front-End",
-      "period": "From Jun 2021 - May 2022",
+      "period": "Jun 2021 - May 2022",
       "description": "Olist is a platform (B2B) that helps sellers to sell their products on Mercado Livre and other Markets Places such as Americanas. Olist is a big store inside these market-places and has a huge platform to help the sellers join (and sell products) with a more evaluated profile. On Olist I worked on the Growth team implementing some functionalities to improve the user experience. Our goal was to create a simple and usable platform to let the non-technical user have a good understanding of what is Olist and what Olist does."
     },
     "tarkuss": {
@@ -55,19 +55,19 @@
     "axm": {
       "company": "AXM Institute, Brazil",
       "position": "Full-Stack",
-      "period": "October 2015 -  September 2016.",
+      "period": "Oct 2015 -  Sep 2016.",
       "description": "Development of the payment system - gateway, reconciliation, and Back-Office - as well as the implementation of the API for notification of transactions made via POS for clients with their own Platform. Development of an API to help the Web Client in the POS requests, CMS for Whirlpool inventory control, and sales reconciliation API and client app. "
     },
     "novaera": {
       "company": "Mercantil Nova Era, Brazil",
       "position": "Full-Stack",
-      "period": "September 2014 - June 2015.",
+      "period": "Sep 2014 - Jun 2015.",
       "description": "Development of internal systems by working together with the company's ERP team. Participation in the creation of a system for reconciling purchases made with cards on POS terminals. Creation of two modules for querying sales made in the wholesale company and a module that serves the same need for Cash & Carry companies. Inventory system - inventories for the logistics part of the company. Price Search System, an Android app with PHP REST API."
     },
     "adptdata": {
       "company": "Adapt Data, Brazil",
       "position": "Full-Stack",
-      "period": "November 2013 - May 2014.",
+      "period": "Nov 2013 - May 2014.",
       "description": "Participation in the development of systems - Pubs & Restaurants (PDV), Despachantes Manaus (Service order control) - both internal systems."
     }
   },

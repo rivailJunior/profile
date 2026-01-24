@@ -63,28 +63,14 @@ function SkillsSlider() {
         {bloxItems.map((item, index) => (
           <div
             key={`${item.name}-${index}`}
-            className="mx-auto py-14 md:py-20 "
+            className="mx-auto py-10 md:py-16 "
           >
-            {/* <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.5 }}
-              animate={{ scale: 1 }}
-              className={`group flex h-36 w-36 items-center justify-center rounded-full border-2 bg-white shadow-lg hover:cursor-pointer hover:shadow-md md:h-48 md:w-48`}
-            >
-              <div
-                className={`flex flex-col items-center justify-center gap-2 `}
-              >
-                <div className="flex h-auto w-auto items-center justify-center  text-brand-black">
-                  <item.icon className="h-12 w-12 text-brand-cyan group-hover:text-brand-cyanHover md:h-20 md:w-20" />
-                </div>
-              </div>
-            </motion.div> */}
             <HoverFillCard className="flex h-36 w-36 items-center justify-center rounded-full bg-white">
               <div
                 className={`flex flex-col items-center justify-center gap-2 `}
               >
-                <div className="flex h-auto w-auto items-center justify-center  text-brand-black">
-                  <item.icon className="h-12 w-12 text-brand-cyan group-hover:text-white md:h-20 md:w-20 " />
+                <div className="flex h-auto w-auto items-center justify-center text-brand-black">
+                  <item.icon className="h-12 w-12 text-brand-cyan group-hover:text-white group-focus:text-brand-cyan group-active:text-white md:h-20 md:w-20" />
                 </div>
               </div>
             </HoverFillCard>

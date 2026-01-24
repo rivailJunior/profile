@@ -2,19 +2,34 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { CenterContainer } from "./center-container";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 export default function CardContainer() {
   const aboutMeTranslations = useTranslations("about_me");
 
   return (
     <div className="relative bg-brand-pink p-5 font-thin shadow-lg">
       <CenterContainer>
-        <div className="mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-3xl">
+        <div
+          className={`mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-2xl 
+            ${roboto.className} `}
+        >
           {aboutMeTranslations("description_1")}
         </div>
-        <p className="mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-3xl">
+        <p
+          className={`mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-2xl ${roboto.className}`}
+        >
           {aboutMeTranslations("description_2")}
         </p>
-        <p className="mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-3xl">
+        <p
+          className={`mb-2 text-justify text-lg leading-relaxed text-gray-100 md:text-2xl 
+            ${roboto.className}`}
+        >
           {aboutMeTranslations("description_3")}
         </p>
       </CenterContainer>
