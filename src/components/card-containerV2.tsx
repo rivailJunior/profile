@@ -24,16 +24,85 @@ export function CardContainerV2() {
   const t = useTranslations("");
   return (
     <div className="flex flex-col justify-between text-brand-black md:flex-row md:gap-4">
-      <div className="flex justify-center md:hidden">
+      {/* Mobile: square image card with overlaid content */}
+      <div className="relative aspect-square w-full overflow-hidden rounded-md md:hidden">
         <Image
           src="/personal.jpg"
-          width={400}
-          height={400}
+          fill
           alt="personal"
-          className="h-[200px] w-[200px] rounded-full object-cover"
-        ></Image>
+          className="object-cover"
+        />
+        <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 z-20 flex flex-col gap-3 p-5">
+          {/* Introduce */}
+          <h3 className="hidden text-center text-2xl font-bold leading-normal md:block">
+            <p className="w-7/10 text-white">{t("card_introduce")} </p>
+            <p>
+              <TypingText
+                text={t("card_introduce2")}
+                className={`w-7/10 ${libreBaskerville.className} text-brand-cyan`}
+                speedMs={60}
+                cursorClassName="text-brand-cyan"
+              />
+            </p>
+          </h3>
+
+          {/* Shot Description */}
+          <div
+            className={
+              "font-regular text-sm leading-6 text-white " + roboto.className
+            }
+          >
+            {t("card_short_description")}
+          </div>
+
+          {/* Icons */}
+          <div className="flex w-full flex-row justify-between">
+            <div className="flex flex-col items-center">
+              <MdLocationPin
+                size={20}
+                className="fas fa-briefcase text-lg text-white"
+              />
+              <span
+                className={
+                  "font-regular ml-1 text-sm text-white " + roboto.className
+                }
+              >
+                {t("card_location")}
+              </span>
+            </div>
+            <div className="flex flex-col items-center">
+              <MdSchool
+                size={20}
+                className="fas fa-university text-lg text-white"
+              />
+              <span
+                className={
+                  "font-regular ml-1 text-sm text-white " + roboto.className
+                }
+              >
+                {t("card_degree_title")}
+              </span>
+            </div>
+            <div className="flex flex-col items-center">
+              <MdComputer
+                size={20}
+                className="fas fa-briefcase text-lg text-white"
+              />
+              <span
+                className={
+                  "font-regular ml-1 text-sm text-white " + roboto.className
+                }
+              >
+                {t("card_job_title")}
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="md:w-2/3">
+
+      {/* Desktop: text column (unchanged) */}
+      <div className="hidden md:block md:w-2/3">
         <div className="bg-whiten flex flex-col items-start gap-4 rounded-md">
           {/* Introduce */}
           <h3 className="text-center text-4xl font-bold leading-normal md:text-left md:text-8xl">
